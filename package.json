@@ -7,9 +7,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@fortawesome/react-fontawesome": "^0.1.9",
     "next": "latest",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-tooltip": "^4.1.2",
     "styled-components": "^4.0.0"
   },
   "devDependencies": {
