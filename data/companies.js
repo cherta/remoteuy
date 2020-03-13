@@ -17,5 +17,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
+  },
+  {
+    picture: "https://tarmac.io/favicon.ico",
+    url: "https://tarmac.io/index.html",
+    name: "Tarmac",
+    description: "We design, build, scale and support exceptional software.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
   }
 ];
