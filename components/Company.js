@@ -5,12 +5,12 @@ import { faGlobeAmericas, faBuilding } from "@fortawesome/free-solid-svg-icons";
 
 const icons = {
   allowFullRemote: faGlobeAmericas,
-  hasPhisicalOffices: faBuilding
+  hasPhysicalOffices: faBuilding
 };
 
 const descriptions = {
   allowFullRemote: `Allows employees to work remote everyday of the year`,
-  hasPhisicalOffices: `Has a phisical office`
+  hasPhysicalOffices: `Has a physical office`
 };
 
 const Wrapper = styled.div`

@@ -6,7 +6,7 @@ export default [
     description: "Fueling the next healthcare industry.",
     meta: {
       allowFullRemote: true,
-      hasPhisicalOffices: true
+      hasPhysicalOffices: true
     }
   }, {
     picture: "https://www.wyeworks.com/favicon.png",
@@ -15,7 +15,7 @@ export default [
     description: "Inspiring people to build great software",
     meta: {
       allowFullRemote: true,
-      hasPhisicalOffices: true
+      hasPhysicalOffices: true
     }
   }
 ];
