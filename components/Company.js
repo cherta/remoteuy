@@ -34,7 +34,10 @@ const Title = styled.h2`
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   line-height: 2rem;
-  color: #232b2f;
+
+  a {
+    color: #232b2f;
+  }
 `;
 
 const Description = styled.p`
@@ -60,12 +63,20 @@ const IconList = styled.div`
   }
 `;
 
-export const Company = ({ name, picture, description, color, meta }) => {
+export const Company = ({ name, url, picture, description, color, meta }) => {
   return (
     <Wrapper color={color}>
       <Picture src={picture} />
       <Information>
-        <Title>{name}</Title>
+        <Title>
+          {url ? (
+            <a href={url} target="_blank">
+              {name}
+            </a>
+          ) : (
+            name
+          )}
+        </Title>
         <Description>{description}</Description>
         <IconList>
           {Object.keys(meta)
