@@ -8,5 +8,14 @@ export default [
       allowFullRemote: true,
       hasPhisicalOffices: true
     }
+  }, {
+    picture: "https://www.wyeworks.com/favicon.png",
+    url: "https://www.wyeworks.com",
+    name: "WyeWorks",
+    description: "Inspiring people to build great software",
+    meta: {
+      allowFullRemote: true,
+      hasPhisicalOffices: true
+    }
   }
 ];
