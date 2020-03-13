@@ -8,7 +8,8 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
-  }, {
+  },
+  {
     picture: "https://www.wyeworks.com/favicon.png",
     url: "https://www.wyeworks.com",
     name: "WyeWorks",
@@ -23,6 +24,16 @@ export default [
     url: "https://tarmac.io/index.html",
     name: "Tarmac",
     description: "We design, build, scale and support exceptional software.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
+    picture: "http://atticalabs.com/images/logoAttica.svg",
+    url: "http://atticalabs.com/",
+    name: "Attica Labs",
+    description: "Transform your ideas into tech-driven solutions",
     meta: {
       allowFullRemote: true,
       hasPhysicalOffices: true
