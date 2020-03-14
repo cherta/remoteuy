@@ -48,5 +48,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
+  },
+  {
+    picture: "https://micheque.uy/favicon.ico",
+    url: "https://micheque.uy/",
+    name: "MiCheque",
+    description: "Reinventamos el financiamiento de las Pymes",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
   }
 ];
