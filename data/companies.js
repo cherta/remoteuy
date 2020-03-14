@@ -59,4 +59,14 @@ export default [
       hasPhysicalOffices: true
     }
   },
+  {
+    picture: "https://tryolabs.com/images/layout/tryolabs-icon.0084317d.svg",
+    url: "https://tryolabs.com",
+    name: "Tryolabs",
+    description: "We build amazing products using Machine Learning & AI components",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  }
 ];
