@@ -41,7 +41,7 @@ const Link = styled.a`
 `;
 
 const Content = styled.section`
-  max-width: 600px;
+  max-width: 720px;
   margin: 0 auto 0 auto;
   margin-top: 6.375rem;
   text-align: center;
