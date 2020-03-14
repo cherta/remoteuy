@@ -50,6 +50,46 @@ export default [
     }
   },
   {
+    picture: "https://www.overactive.com/web/img/web-icons/114x114.png",
+    url: "https://www.overactive.com",
+    name: "Overactive",
+    description: "We provide technology solutions from four different strategic locations: USA, PR, AR, UY. Work with us, send your cv to talent@overactive.com #WeKnowHow.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
+    picture: "https://tryolabs.com/images/layout/tryolabs-icon.0084317d.svg",
+    url: "https://tryolabs.com",
+    name: "Tryolabs",
+    description: "We build amazing products using Machine Learning & AI components",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
+    picture: "/images/formula-logo.jpg",
+    url: "http://www.formula.uy/",
+    name: "Fórmula",
+    description: "Servicio de suscripción mensual de productos de belleza y agencia de comunicación de marcas de cosmética",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
+    picture: "https://www.endava.com/-/media/EndavaDigital/Endava/Images/MetaDataImages/preview-image.ashx",
+    url: "https://www.endava.com/",
+    name: "Endava",
+    description: "We deliver global transformation",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
     picture: "https://micheque.uy/favicon.ico",
     url: "https://micheque.uy/",
     name: "MiCheque",
