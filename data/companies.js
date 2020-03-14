@@ -48,5 +48,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
+  },
+  {
+    picture: "https://www.endava.com/-/media/EndavaDigital/Endava/Images/MetaDataImages/preview-image.ashx",
+    url: "https://www.endava.com/",
+    name: "Endava",
+    decription: "We deliver global transformation",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
   }
 ];
