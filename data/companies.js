@@ -98,5 +98,16 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
+  },
+  {
+    picture: "https://secureservercdn.net/166.62.115.254/f46.324.myftpupload.com/wp-content/uploads/2018/02/favicon.png",
+    url: "https://www.inswitch.com/",
+    name: "IN Switch",
+    description: "Lending & fintech innovation",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+	
   }
 ];
