@@ -1,13 +1,13 @@
 import App from "next/app";
 import Head from "next/head";
+import Router from "next/router";
 import React from "react";
 import { ThemeProvider } from "styled-components";
+import * as gtag from "../lib/gtag";
 
-const theme = {
-  colors: {
-    primary: "#0070f3"
-  }
-};
+Router.events.on("routeChangeComplete", url => gtag.pageview(url));
+
+const theme = {}; // Leaving this here just in case
 
 export default class RemoteUYApp extends App {
   render() {
