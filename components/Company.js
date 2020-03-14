@@ -46,6 +46,10 @@ const Description = styled.p`
   font-weight: 300;
   line-height: 1.625rem;
   color: #232b2f;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 `;
 
 const IconList = styled.div`
@@ -77,7 +81,7 @@ export const Company = ({ name, url, picture, description, color, meta }) => {
             name
           )}
         </Title>
-        <Description>{description}</Description>
+        <Description title={description}>{description}</Description>
         <IconList>
           {Object.keys(meta)
             .filter(key => !!meta[key])
