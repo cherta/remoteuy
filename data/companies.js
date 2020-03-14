@@ -68,5 +68,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
+  },
+  {
+    picture: "/images/formula-logo.jpg",
+    url: "http://www.formula.uy/",
+    name: "Fórmula",
+    description: "Servicio de suscripción mensual de productos de belleza y agencia de comunicación de marcas de cosmética",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
   }
 ];

@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 const Picture = styled.img`
   width: 3rem;
   height: 3rem;
-  object-fit: cover;
+  object-fit: contain;
 `;
 
 const Information = styled.div`
