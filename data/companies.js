@@ -38,5 +38,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
+  },
+  {
+    picture: "https://www.globant.com/sites/default/files/FavIcon-Globantwebsite-2x_5.png",
+    url: "https://www.globant.com",
+    name: "Globant",
+    description: "We empower organizations through digital & cognitive transformation",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
   }
 ];
