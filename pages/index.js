@@ -23,6 +23,17 @@ const Header = styled.header`
   top: 0;
 `;
 
+const Footer = styled.footer`
+  display: flex;
+  flex-direction: row;
+  padding: 0 0.5rem;
+  height: 2rem;
+  background: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  color: #232b2f;
+`;
+
 const Title = styled.h1`
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -44,6 +55,7 @@ const Content = styled.section`
   max-width: 720px;
   margin: 0 auto 0 auto;
   margin-top: 6.375rem;
+  margin-bottom: 3rem;
   text-align: center;
   * {
     text-align: left;
@@ -52,10 +64,14 @@ const Content = styled.section`
 
 const Paragraph = styled.p`
   font-family: "Montserrat", sans-serif;
+  line-height: normal;
   font-size: 1rem;
   color: #232b2f;
   margin-bottom: 1.5rem;
   padding: 0 1rem;
+  b {
+    font-weight: bold;
+  }
 `;
 
 export default () => {
@@ -71,11 +87,7 @@ export default () => {
       </Header>
       <Content>
         <Paragraph>
-          remote.uy es un listado de empresas uruguayas que promueven el trabajo
-          remoto o distribuído.
-        </Paragraph>
-        <Paragraph>
-          Si querés una empresa podés ayudarnos{" "}
+          <b>remote.uy</b> es un listado de empresas uruguayas que promueven el trabajo remoto o distribuído. Si querés agregar una empresa podés ayudarnos{" "}
           <a href="https://github.com/cherta/remoteuy" target="_blank">
             mandando un PR a nuestro repositorio de GH
           </a>
@@ -91,6 +103,9 @@ export default () => {
           );
         })}
       </Content>
+      <Footer>
+        Sitio creado para la promoción del trabajo remoto en Uruguay con el objetivo de 
+      </Footer>
       <ReactTooltip clickable delayHide={500} place="right" />
       {/* <Button>
         <Link>

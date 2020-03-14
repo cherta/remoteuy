@@ -27,7 +27,7 @@ const Picture = styled.img`
 `;
 
 const Information = styled.div`
-  padding: 0 0.5rem;
+  padding: 0 1rem;
 `;
 
 const Title = styled.h2`
