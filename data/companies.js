@@ -48,5 +48,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
-  }
+  },
+  {
+    picture: "https://www.overactive.com/web/img/web-icons/114x114.png",
+    url: "https://www.overactive.com",
+    name: "Overactive",
+    description: "We provide technology solutions from four different strategic locations: USA, PR, AR, UY. Work with us, send your cv to talent@overactive.com #WeKnowHow.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
 ];
