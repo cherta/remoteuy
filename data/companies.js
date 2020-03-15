@@ -100,7 +100,7 @@ export default [
     }
   },
   {
-    picture: "https://www.qualabs.com/img/qualabs/qualabs.svg",
+    picture: "/images/qualabs.png",
     url: "https://www.qualabs.com/",
     name: "Qualabs",
     description: "We are video distribution business enablers through technology products and professional services.",
