@@ -100,6 +100,26 @@ export default [
     }
   },
   {
+    picture: "https://secureservercdn.net/166.62.115.254/f46.324.myftpupload.com/wp-content/uploads/2018/02/favicon.png",
+    url: "https://www.inswitch.com/",
+    name: "IN Switch",
+    description: "Lending & fintech innovation",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
+    picture: "/images/qualabs.png",
+    url: "https://www.qualabs.com/",
+    name: "Qualabs",
+    description: "We are video distribution business enablers through technology products and professional services.",
+    meta: {
+      allowFullRemote: false,
+      hasPhysicalOffices: true
+    }
+  },
+  {
     picture: "https://sibra.uy/img/SibraIco.ico",
     url: "https://sibra.uy/",
     name: "Sibra",

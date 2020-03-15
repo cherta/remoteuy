@@ -75,7 +75,7 @@ export default () => {
           remoto o distribuído.
         </Paragraph>
         <Paragraph>
-          Si querés una empresa podés ayudarnos{" "}
+          Si querés agregar una empresa podés ayudarnos{" "}
           <a href="https://github.com/cherta/remoteuy" target="_blank">
             mandando un PR a nuestro repositorio de GH
           </a>
