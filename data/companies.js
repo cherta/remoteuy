@@ -98,5 +98,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
+  },
+  {
+    picture: "https://sibra.uy/img/SibraIco.ico",
+    url: "https://sibra.uy/",
+    name: "Sibra",
+    description: "Brindamos soluciones integrales de software, enfocados en la innovación tecnológica aplicada al entorno empresarial.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: false
+    }
   }
 ];
