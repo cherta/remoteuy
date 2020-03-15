@@ -140,7 +140,7 @@ export default [
   },
   {
     picture:
-      "https://switchsoftware.us/Content/assets/base/img/content/misc/favicon.ico",
+      "https://switchsoftware.us/Content/assets/base/img/layout/logos/sw_logo-1.png",
     url: "https://switchsoftware.us/",
     name: "Switch Software Solutions",
     description:
