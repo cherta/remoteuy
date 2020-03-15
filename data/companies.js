@@ -108,6 +108,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
-	
+  },
+  {
+    picture: "/images/qualabs.png",
+    url: "https://www.qualabs.com/",
+    name: "Qualabs",
+    description: "We are video distribution business enablers through technology products and professional services.",
+    meta: {
+      allowFullRemote: false,
+      hasPhysicalOffices: true
+    }
   }
 ];
