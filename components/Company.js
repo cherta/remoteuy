@@ -9,20 +9,27 @@ const icons = {
 };
 
 const descriptions = {
-  allowFullRemote: `Allows employees to work remote everyday of the year`,
+  allowFullRemote: `Allows employees to work remote every day of the year`,
   hasPhysicalOffices: `Has a physical office`
 };
 
 const Wrapper = styled.div`
   display: flex;
-  padding: 1rem;
-  background-color: ${({ color }) =>
-    color === "light" ? `rgb(255, 126, 50, 0.05)` : `rgb(255, 126, 50, 0.15)`};
+  padding: 1.5rem 1rem;
+  margin: 1rem 1.5rem;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
+    0 5px 15px 0 rgba(0, 0, 0, 0.08);
+  transition: 300ms;
+
+  &:hover {
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.11),
+      0 5px 15px 0 rgba(0, 0, 0, 0.08);
+  }
 `;
 
 const Picture = styled.img`
-  width: 3rem;
-  height: 3rem;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
 `;
 
@@ -32,24 +39,30 @@ const Information = styled.div`
 
 const Title = styled.h2`
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 2rem;
+  font-weight: bold;
 
   a {
     color: #232b2f;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `;
 
 const Description = styled.p`
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.625rem;
+  font-weight: 400;
+  line-height: 1.25rem;
   color: #232b2f;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  margin: 0.5rem 0;
 `;
 
 const IconList = styled.div`

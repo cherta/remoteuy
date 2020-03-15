@@ -17,7 +17,7 @@ const Header = styled.header`
   justify-content: space-between;
   height: 4.5rem;
   background: #fff;
-  box-shadow: 0px 1px 4px 0px rgba(194, 84, 19, 0.3);
+  box-shadow: 0px 1px 12px 0px rgba(35, 43, 47, 0.25);
   position: fixed;
   width: 100%;
   top: 0;
@@ -52,7 +52,7 @@ const Content = styled.section`
 
 const Paragraph = styled.p`
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #232b2f;
   margin-bottom: 1.5rem;
   padding: 0 1rem;
