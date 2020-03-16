@@ -209,5 +209,15 @@ export default [
       allowFullRemote: false,
       hasPhysicalOffices: true
     }
+  },
+  {
+    picture: "https://datasec-soft.com/favicon.ico",
+    url: "https://datasec-soft.com/",
+    name: "Datasec",
+    description: "Somos una firma presente en el mercado internacional desde 1987, pionera en el área del buen gobierno, aseguramiento, gestión de riesgos, calidad y seguridad en sistemas de la información (TI).",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
   }
 ];
