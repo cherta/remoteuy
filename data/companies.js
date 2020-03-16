@@ -229,5 +229,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: false
     }
+  },
+  {
+    picture: "/images/IOV_Logo.jpg",
+    url: "https://www.iovlabs.org/",
+    name: "IOVlabs",
+    description: "IOVlabs builds low-cost, highly secure, easy-to-use platforms for the new global economy. Harnessing the benefits of Bitcoin with a suite of tools to create and protect growth, we’re planting the seeds for global financial freedom.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
   }
 ];
