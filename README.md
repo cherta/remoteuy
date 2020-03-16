@@ -4,7 +4,7 @@
 
 ## Cómo colaborar?
 
-La mejor forma de contribuircolaborar con el sitio y ampliar el contenido es creando un PR ya sea para agregar tuuna empresa que conozcas acepte y promueva el trabajo remoto o para mejorar cualquier parte del sitio en general.
+La mejor forma de contribuir/colaborar con el sitio y ampliar el contenido es creando un PR ya sea para agregar tu/una empresa que conozcas acepte y promueva el trabajo remoto o para mejorar cualquier parte del sitio en general.
 
 ## Cómo agregar mi empresa?
 
