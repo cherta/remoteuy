@@ -249,5 +249,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
+  },
+  {
+    picture: "https://www.octobot.io/email-signature-mark.png",
+    url: "https://octobot.io/",
+    name: "Octobot",
+    description: "Digital Products Experts",
+    meta: {
+      allowFullRemote: false,
+      hasPhysicalOffices: true
+    }
   }
 ];
