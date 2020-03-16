@@ -128,8 +128,89 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: false
     }
-   },
-   {
+  },
+  {
+    picture: "/images/switch-logo.png",
+    url: "https://switchsoftware.us/",
+    name: "Switch Software Solutions",
+    description:
+      "Switch is a custom application development firm based in Montevideo, Uruguay - holding commercial offices in Chicago, Austin, and Denver.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
+    picture: "https://d33wubrfki0l68.cloudfront.net/d79bc510efd65320fac54526c2b52ebdbaae967c/4bfaa/blog/short-white-streaver.png",
+    url: "https://www.streaver.com",
+    name: "Streaver",
+    description: "We turn your business ideas into action.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
+    picture: "https://scontent.fmvd1-1.fna.fbcdn.net/v/t1.0-9/12009649_1680564098845933_8958272112656141499_n.png?_nc_cat=108&_nc_sid=85a577&_nc_ohc=6F5ZhpxyDc0AX8ZMnb5&_nc_ht=scontent.fmvd1-1.fna&oh=528c41bc8aa02f2306fec22942ffd98c&oe=5E9354CF",
+    url: "https://kreitech.io",
+    name: "Kreitech",
+    description: "Enabling ideas through software and Hardware. Software and IoT Agency",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
+    picture: "https://createthrive.com/assets/logos/createthrive-icon.png",
+    url: "https://createthrive.com",
+    name: "CreateThrive",
+    description: "Custom Software Tools for Startups and Enterprises",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
+    picture: "https://www.infuy.com/images/infuy.svg",
+    url: "https://www.infuy.com/",
+    name: "INFUY",
+    description: "Your challenges. Our innovative solutions.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
+    picture: "https://lightit.io/favicon.ico",
+    url: "https://lightit.io/",
+    name: "Light-it",
+    description: "We are a digital product studio that combines strategic thinking and the latest technologies to craft innovative solutions that consistently break ground.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
+    picture: "https://cloud.bluekiri.com/images/bluekiri.svg",
+    url: "https://bluekiri.com/",
+    name: "Bluekiri",
+    description: "Bluekiri has the team, the knowledge and the technology to architect and manage your digital business. We provide you with a high performance, high availability, cost effective global solution.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
+    picture: "https://loopstudio.dev/wp-content/uploads/2019/03/cropped-logofavicon-192x192.png",
+    url: "https://loopstudio.dev/",
+    name: "LoopStudio",
+    description: "Extraordinary Services for Extraordinary Customers",
+    meta: {
+      allowFullRemote: false,
+      hasPhysicalOffices: true
+    }
+  },
+  {
     picture: "https://datasec-soft.com/favicon.ico",
     url: "https://datasec-soft.com/",
     name: "Datasec",
@@ -138,5 +219,5 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
-   }
+  }
 ];
