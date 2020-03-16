@@ -249,5 +249,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
+  },
+  {
+    picture: "https://www.bloque.com.uy/out-images/bloque-logo.svg",
+    url: "https://www.bloque.com.uy/",
+    name: "Bloque",
+    description: "Somos un estudio de diseño y desarrollo web enfocado en crear hermosas interfaces. • Obsesionados por los detalles, performance, y SEO •",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
   }
 ];
