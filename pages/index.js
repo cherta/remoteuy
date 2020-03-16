@@ -97,7 +97,7 @@ export default () => {
             vivo <b>CÓMO TRABAJAR REMOTO</b> con recomendaciones, herramientas y
             mucho más para aprender sobre el trabajo remoto.
           </Paragraph>
-          <YouTube id="wHn1_QVoXGM" />
+          <YouTube id="GlMixBRO54s" />
           <Paragraph
             css={`
               margin-bottom: 0;
@@ -105,8 +105,8 @@ export default () => {
             `}
           >
             Participantes: Luisa Martínez (VP of Market Entry en Kuelap, Inc),
-            Ines Martinez (CEO en The Next Co.), Justin Graside (Growth Lead en Tavano
-            Team), Gabriel Chertok (Engineering Manager en Ingenious)
+            Ines Martinez (CEO en The Next Co.), Justin Graside (Growth Lead en
+            Tavano Team), Gabriel Chertok (Engineering Manager en Ingenious)
           </Paragraph>
         </VideoContainer>
         <Paragraph>
