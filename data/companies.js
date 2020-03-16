@@ -159,5 +159,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
+  },
+  {
+    picture: "https://createthrive.com/assets/logos/createthrive-icon.png",
+    url: "https://createthrive.com",
+    name: "CreateThrive",
+    description: "Custom Software Tools for Startups and Enterprises",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
   }
 ];
