@@ -104,8 +104,8 @@ export default () => {
             `}
           >
             Participantes: Luisa Martínez (VP of Market Entry en Kuelap, Inc),
-            Ines Martinez (me falta todo acá), Justin Graside (magia en Tavano
-            Team), Gabriel Chertok (Eng. Manager en Ingenious)
+            Ines Martinez (CEO en The Next Co.), Justin Graside (Growth Lead en Tavano
+            Team), Gabriel Chertok (Engineering Manager en Ingenious)
           </Paragraph>
         </VideoContainer>
         <Paragraph>
