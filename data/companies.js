@@ -279,5 +279,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
+  },
+  {
+    picture: "https://uploads-ssl.webflow.com/58f7a9f3149b3b1bb22349b9/58fe416dfee17654a83a8550_xl-header-logo-bg-1%402x.png",
+    url: "https://www.xmartlabs.com/",
+    name: "Xmartlabs",
+    description: "We provide exceptional strategy, design and technology to create innovative and high-value software.",
+    meta: {
+      allowFullRemote: false,
+      hasPhysicalOffices: true
+    }
   }
 ];
