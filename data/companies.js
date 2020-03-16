@@ -201,6 +201,46 @@ export default [
     }
   },
   {
+    picture: "https://loopstudio.dev/wp-content/uploads/2019/03/cropped-logofavicon-192x192.png",
+    url: "https://loopstudio.dev/",
+    name: "LoopStudio",
+    description: "Extraordinary Services for Extraordinary Customers",
+    meta: {
+      allowFullRemote: false,
+      hasPhysicalOffices: true
+    }
+  },
+  {
+    picture: "https://datasec-soft.com/favicon.ico",
+    url: "https://datasec-soft.com/",
+    name: "Datasec",
+    description: "Somos una firma presente en el mercado internacional desde 1987, pionera en el área del buen gobierno, aseguramiento, gestión de riesgos, calidad y seguridad en sistemas de la información (TI).",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
+    picture: "https://www.cavepot.com/assets/img/logo.png",
+    url: "https://cavepot.com/",
+    name: "Cavepot",
+    description: "We are a software and app design company keen on pixel perfect solutions that bring your ideas to live!",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: false
+    }
+  },
+  {
+    picture: "/images/IOV_Logo.jpg",
+    url: "https://www.iovlabs.org/",
+    name: "IOVlabs",
+    description: "IOVlabs builds low-cost, highly secure, easy-to-use platforms for the new global economy. Harnessing the benefits of Bitcoin with a suite of tools to create and protect growth, we’re planting the seeds for global financial freedom.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
     picture: "https://monkeylearn.com/static/img/favicon/favicon-196x196.png",
     url: "https://monkeylearn.com/",
     name: "MonkeyLearn",
