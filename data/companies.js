@@ -239,5 +239,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
+  },
+  {
+    picture: "https://monkeylearn.com/static/img/favicon/favicon-196x196.png",
+    url: "https://monkeylearn.com/",
+    name: "MonkeyLearn",
+    description: "Our mission is to democratize Machine Learning technologies.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
   }
 ];
