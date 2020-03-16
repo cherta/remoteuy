@@ -1,5 +1,6 @@
 import React from "react";
 import NextLink from "next/link";
+import Head from "next/head";
 import dynamic from "next/dynamic";
 import styled from "styled-components";
 import companies from "../data/companies";
@@ -61,6 +62,12 @@ const Paragraph = styled.p`
 export default () => {
   return (
     <Layout>
+      <Head>
+        <title>
+          Listado de empresas uruguayas que promueven el trabajo remoto o
+          distribuído
+        </title>
+      </Head>
       <Header>
         <Title>
           🌎<span>.uy</span>
