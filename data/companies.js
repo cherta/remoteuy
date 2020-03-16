@@ -139,5 +139,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
+  },
+  {
+    picture: "https://d33wubrfki0l68.cloudfront.net/d79bc510efd65320fac54526c2b52ebdbaae967c/4bfaa/blog/short-white-streaver.png",
+    url: "https://www.streaver.com",
+    name: "Streaver",
+    description: "We turn your business ideas into action.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
   }
 ];
