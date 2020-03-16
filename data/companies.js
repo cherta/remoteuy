@@ -227,7 +227,7 @@ export default [
     description: "We are a software and app design company keen on pixel perfect solutions that bring your ideas to live!",
     meta: {
       allowFullRemote: true,
-      hasPhysicalOffices: false
+      hasPhysicalOffices: true
     }
   },
   {
@@ -247,6 +247,16 @@ export default [
     description: "Our mission is to democratize Machine Learning technologies.",
     meta: {
       allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
+    picture: "https://www.octobot.io/email-signature-mark.png",
+    url: "https://octobot.io/",
+    name: "Octobot",
+    description: "Digital Products Experts",
+    meta: {
+      allowFullRemote: false,
       hasPhysicalOffices: true
     }
   },
