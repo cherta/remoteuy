@@ -127,8 +127,9 @@ export default [
     meta: {
       allowFullRemote: true,
       hasPhysicalOffices: false
-    },
-    {
+    }
+   },
+   {
     picture: "https://datasec-soft.com/favicon.ico",
     url: "https://datasec-soft.com/",
     name: "Datasec",
@@ -137,5 +138,5 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
-  }
+   }
 ];
