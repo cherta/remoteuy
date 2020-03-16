@@ -199,5 +199,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
+  },
+  {
+    picture: "https://loopstudio.dev/wp-content/uploads/2019/03/cropped-logofavicon-192x192.png",
+    url: "https://loopstudio.dev/",
+    name: "LoopStudio",
+    description: "Extraordinary Services for Extraordinary Customers",
+    meta: {
+      allowFullRemote: false,
+      hasPhysicalOffices: true
+    }
   }
 ];
