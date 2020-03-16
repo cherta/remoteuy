@@ -128,5 +128,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: false
     }
-  }
+  },
+  {
+    picture: "https://www.infuy.com/images/infuy.svg",
+    url: "https://www.infuy.com/",
+    name: "INFUY",
+    description: "Your challenges. Our innovative solutions.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
 ];
