@@ -128,5 +128,16 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: false
     }
+  },
+  {
+    picture: "/images/switch-logo.png",
+    url: "https://switchsoftware.us/",
+    name: "Switch Software Solutions",
+    description:
+      "Switch is a custom application development firm based in Montevideo, Uruguay - holding commercial offices in Chicago, Austin, and Denver.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
   }
 ];
