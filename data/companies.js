@@ -227,7 +227,7 @@ export default [
     description: "We are a software and app design company keen on pixel perfect solutions that bring your ideas to live!",
     meta: {
       allowFullRemote: true,
-      hasPhysicalOffices: false
+      hasPhysicalOffices: true
     }
   },
   {
