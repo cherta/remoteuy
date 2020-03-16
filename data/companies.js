@@ -128,5 +128,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: false
     }
+  },
+    {
+    picture: "https://cloud.bluekiri.com/images/bluekiri.svg",
+    url: "https://bluekiri.com/",
+    name: "Bluekiri",
+    description: "Bluekiri has the team, the knowledge and the technology to architect and manage your digital business. We provide you with a high performance, high availability, cost effective global solution.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
   }
 ];
