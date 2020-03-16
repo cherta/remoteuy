@@ -30,7 +30,7 @@ export default [
     }
   },
   {
-    picture: "http://atticalabs.com/images/logoAttica.svg",
+    picture: "/images/logoAttica.svg",
     url: "http://atticalabs.com/",
     name: "Attica Labs",
     description: "Transform your ideas into tech-driven solutions",
