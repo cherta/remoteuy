@@ -128,5 +128,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: false
     }
+  },
+  {
+    picture: "https://lightit.io/favicon.ico",
+    url: "https://lightit.io/",
+    name: "Light-it",
+    description: "We are a digital product studio that combines strategic thinking and the latest technologies to craft innovative solutions that consistently break ground.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
   }
 ];
