@@ -128,5 +128,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: false
     }
+  },
+  {
+    picture: "https://www.cavepot.com/assets/img/logo.png",
+    url: "https://cavepot.com/",
+    name: "Cavepot",
+    description: "We are a software and app design company keen on pixel perfect solutions that bring your ideas to live!",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: false
+    }
   }
 ];
