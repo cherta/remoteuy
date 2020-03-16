@@ -50,6 +50,16 @@ export default [
     }
   },
   {
+    picture: "https://www.tavanoteam.com/wp-content/uploads/2018/07/tt-fav.png",
+    url: "https://www.tavanoteam.com",
+    name: "Tavano Team",
+    description: "Delivering creative SuiteCommerce solutions to organizations worldwide",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
     picture: "https://www.overactive.com/web/img/web-icons/114x114.png",
     url: "https://www.overactive.com",
     name: "Overactive",
