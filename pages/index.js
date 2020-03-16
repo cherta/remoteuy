@@ -3,6 +3,7 @@ import NextLink from "next/link";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import styled from "styled-components";
+import YouTube from "react-youtube-embed";
 import companies from "../data/companies";
 import { Company } from "../components/Company";
 
@@ -22,6 +23,7 @@ const Header = styled.header`
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 1;
 `;
 
 const Title = styled.h1`
@@ -57,6 +59,18 @@ const Paragraph = styled.p`
   color: #232b2f;
   margin-bottom: 1.5rem;
   padding: 0 1rem;
+  line-height: 1.2;
+
+  b {
+    font-weight: 700;
+  }
+`;
+
+const VideoContainer = styled.div`
+  height: calc(100vh - 4.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export default () => {
@@ -77,6 +91,24 @@ export default () => {
         </NextLink> */}
       </Header>
       <Content>
+        <VideoContainer>
+          <Paragraph>
+            A las 20:30 UYT del Lunes 16 de Marzo estaremos transmitiendo en
+            vivo <b>CÓMO TRABAJAR REMOTO</b> con recomendaciones, herramientas y
+            mucho más para aprender sobre el trabajo remoto.
+          </Paragraph>
+          <YouTube id="GlMixBRO54s" />
+          <Paragraph
+            css={`
+              margin-bottom: 0;
+              margin-top: 1.5rem;
+            `}
+          >
+            Participantes: Luisa Martínez (VP of Market Entry en Kuelap, Inc),
+            Ines Martinez (CEO en The Next Co.), Justin Graside (Growth Lead en
+            Tavano Team), Gabriel Chertok (Engineering Manager en Ingenious)
+          </Paragraph>
+        </VideoContainer>
         <Paragraph>
           remote.uy es un listado de empresas uruguayas que promueven el trabajo
           remoto o distribuído.
