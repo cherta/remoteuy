@@ -289,5 +289,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
+  },
+  {
+    picture: "https://scontent.fmvd4-1.fna.fbcdn.net/v/t1.0-9/64783454_2365355500368689_8120181765294784512_n.png?_nc_cat=103&_nc_sid=85a577&_nc_oc=AQkrCAsAdzjJ84qXhUt2zzYEIjus5XiSBqh3KwTVyzJhBP5IzhjYj_v4QjJtHaoJM0g&_nc_ht=scontent.fmvd4-1.fna&oh=04b6f77961481d26e2bb1ee9672e168a&oe=5E966712",
+    url: "https://www.asapdevelopers.com/",
+    name: "AsapDevelopers",
+    description: "We bring innovative ideas to life.",
+    meta: {
+      allowFullRemote: false,
+      hasPhysicalOffices: true
+    }
   }
 ];
