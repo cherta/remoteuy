@@ -93,8 +93,8 @@ export default () => {
       <Content>
         <VideoContainer>
           <Paragraph>
-            A las 20:30 UYT del Lunes 16 de Marzo estaremos transmitiendo en
-            vivo <b>CÓMO TRABAJAR REMOTO</b> con recomendaciones, herramientas y
+            A las 20:30 UYT del Lunes 16 de Marzo transmitimos en vivo{" "}
+            <b>CÓMO TRABAJAR REMOTO</b> con recomendaciones, herramientas y
             mucho más para aprender sobre el trabajo remoto.
           </Paragraph>
           <YouTube id="YAvDWhXAC6I" />
