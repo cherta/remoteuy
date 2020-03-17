@@ -97,7 +97,7 @@ export default () => {
             vivo <b>CÓMO TRABAJAR REMOTO</b> con recomendaciones, herramientas y
             mucho más para aprender sobre el trabajo remoto.
           </Paragraph>
-          <YouTube id="GlMixBRO54s" />
+          <YouTube id="YAvDWhXAC6I" />
           <Paragraph
             css={`
               margin-bottom: 0;
