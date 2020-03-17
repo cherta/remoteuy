@@ -298,8 +298,9 @@ export default [
     meta: {
       allowFullRemote: false,
       hasPhysicalOffices: true
-    },
-	{
+    }
+  },
+  {
     picture: "https://intermediasoftware.com/wp-content/uploads/2020/03/fav48.png",
     url: "https://intermediasoftware.com/",
     name: "Intermedia",
