@@ -279,5 +279,15 @@ export default [
       allowFullRemote: false,
       hasPhysicalOffices: true
     }
+  },
+  {
+    picture: "https://dlocal.com/wp-content/uploads/2018/01/logo-black-new_x2.png",
+    url: "https://dlocal.com/",
+    name: "Dlocal",
+    description: "The only payments platform that unlocks the full potential of today’s growth markets.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
   }
 ];
