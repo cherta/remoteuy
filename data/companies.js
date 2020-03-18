@@ -299,7 +299,28 @@ export default [
       allowFullRemote: false,
       hasPhysicalOffices: true
     }
-  },{
+  },
+  {
+    picture: "https://i.imgur.com/iNBtPKx.png",
+    url: "https://spacedev.uy/",
+    name: "SpaceDev",
+    description: "A software factory serving clients all around the world. We develop Full-Stack projects expanding our clients' capabilities and resources. For us the sky is no longer the limit; There's a whole outerspace to excel in.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
+    picture: "https://intermediasoftware.com/wp-content/uploads/2020/03/fav48.png",
+    url: "https://intermediasoftware.com/",
+    name: "Intermedia",
+    description: "We help enterprises to digitally transform, by integrating intelligent ecosystems and exploiting data in innovative ways, to create unique competitive advantages",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
     picture: "https://ameba-wpengine.netdna-ssl.com/wp-content/themes/ameba/images/logo-amb-en.svg",
     url: "https://www.ameba.com.uy/",
     name: "Ameba Creative Studio",
