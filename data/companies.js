@@ -1,5 +1,15 @@
 export default [
   {
+    picture: "https://jubilo-uploads.s3.amazonaws.com/jubilo-black-corp.svg",
+    url: "https://www.jubilostudios.com",
+    name: "Jubilo Studios",
+    description: "Agencia de servicios digitales de Uruguay al mundo.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
     picture: "https://www.ingenious.agency/favicon-32x32.png",
     url: "https://www.ingenious.agency",
     name: "Ingenious",
@@ -309,25 +319,5 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
-  },
-  {
-    picture: "https://intermediasoftware.com/wp-content/uploads/2020/03/fav48.png",
-    url: "https://intermediasoftware.com/",
-    name: "Intermedia",
-    description: "We help enterprises to digitally transform, by integrating intelligent ecosystems and exploiting data in innovative ways, to create unique competitive advantages",
-    meta: {
-      allowFullRemote: true,
-      hasPhysicalOffices: true
-    }
-  },
-  {
-    picture: "https://ameba-wpengine.netdna-ssl.com/wp-content/themes/ameba/images/logo-amb-en.svg",
-    url: "https://www.ameba.com.uy/",
-    name: "Ameba Creative Studio",
-    description: "Helping companies stand out on every step of their growth with a user-centric approach.",
-    meta: {
-      allowFullRemote: true,
-      hasPhysicalOffices: true
-    }
-  },
+  }
 ];
