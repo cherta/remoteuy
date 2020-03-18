@@ -330,4 +330,14 @@ export default [
       hasPhysicalOffices: true
     }
   },
+  {
+    picture: "https://www.buscojobs.com/static/img/favicon/favicon.ico",
+    url: "https://www.buscojobs.com.uy/",
+    name: "Buscojobs",
+    description: "Conectamos talento con oportunidades",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
 ];
