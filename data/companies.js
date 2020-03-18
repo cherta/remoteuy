@@ -301,6 +301,16 @@ export default [
     }
   },
   {
+    picture: "https://i.imgur.com/iNBtPKx.png",
+    url: "https://spacedev.uy/",
+    name: "SpaceDev",
+    description: "A software factory serving clients all around the world. We develop Full-Stack projects expanding our clients' capabilities and resources. For us the sky is no longer the limit; There's a whole outerspace to excel in.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
     picture: "https://intermediasoftware.com/wp-content/uploads/2020/03/fav48.png",
     url: "https://intermediasoftware.com/",
     name: "Intermedia",
