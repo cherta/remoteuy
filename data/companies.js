@@ -319,5 +319,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
-  }
+  },
+  {
+    picture: "https://ameba-wpengine.netdna-ssl.com/wp-content/themes/ameba/images/logo-amb-en.svg",
+    url: "https://www.ameba.com.uy/",
+    name: "Ameba Creative Studio",
+    description: "Helping companies stand out on every step of their growth with a user-centric approach.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
 ];
