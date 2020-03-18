@@ -201,7 +201,7 @@ export default [
     }
   },
   {
-    picture: "https://cloud.bluekiri.com/images/bluekiri.svg",
+    picture: "https://bluekiri.com/images/bluekiri_leaf.png",
     url: "https://bluekiri.com/",
     name: "Bluekiri",
     description: "Bluekiri has the team, the knowledge and the technology to architect and manage your digital business. We provide you with a high performance, high availability, cost effective global solution.",
