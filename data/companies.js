@@ -330,4 +330,15 @@ export default [
       hasPhysicalOffices: true
     }
   },
+  {
+    picture: "/images/STB_logo_v01.png",
+    url: "https://www.softwaretestingbureau.com/",
+    name: "Software Testing Bureau",
+    description:
+      "Potenciamos la productividad de las empresas automatizando sus pruebas de software",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
 ];
