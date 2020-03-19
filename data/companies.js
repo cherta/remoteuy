@@ -330,4 +330,14 @@ export default [
       hasPhysicalOffices: true
     }
   },
+  {
+    picture: "https://www.systems-x.com/hs-fs/hubfs/SX%20Logo%20v9.0%20Landscape%20SM500-2.png?width=500&name=SX%20Logo%20v9.0%20Landscape%20SM500-2.png",
+    url: "https://www.systems-x.com/",
+    name: "Systems X",
+    description: "Connecting You With What's Next.",
+    meta: {
+      allowFullRemote: false,
+      hasPhysicalOffices: true
+    }
+  },
 ];
