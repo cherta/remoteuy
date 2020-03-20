@@ -201,7 +201,7 @@ export default [
     }
   },
   {
-    picture: "https://cloud.bluekiri.com/images/bluekiri.svg",
+    picture: "https://bluekiri.com/images/bluekiri_leaf.png",
     url: "https://bluekiri.com/",
     name: "Bluekiri",
     description: "Bluekiri has the team, the knowledge and the technology to architect and manage your digital business. We provide you with a high performance, high availability, cost effective global solution.",
@@ -325,6 +325,16 @@ export default [
     url: "https://www.ameba.com.uy/",
     name: "Ameba Creative Studio",
     description: "Helping companies stand out on every step of their growth with a user-centric approach.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
+    picture: "https://jubilo-uploads.s3.amazonaws.com/jubilo-black-corp.svg",
+    url: "https://jubilostudios.com/",
+    name: "Júbilo Estudios",
+    description: "Soluciones digitales desde uruguay para el mundo.",
     meta: {
       allowFullRemote: true,
       hasPhysicalOffices: true
