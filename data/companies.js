@@ -201,7 +201,7 @@ export default [
     }
   },
   {
-    picture: "https://cloud.bluekiri.com/images/bluekiri.svg",
+    picture: "https://bluekiri.com/images/bluekiri_leaf.png",
     url: "https://bluekiri.com/",
     name: "Bluekiri",
     description: "Bluekiri has the team, the knowledge and the technology to architect and manage your digital business. We provide you with a high performance, high availability, cost effective global solution.",
@@ -336,7 +336,27 @@ export default [
     name: "Systems X",
     description: "Connecting You With What's Next.",
     meta: {
-      allowFullRemote: false,
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
+    picture: "https://jubilo-uploads.s3.amazonaws.com/jubilo-black-corp.svg",
+    url: "https://jubilostudios.com/",
+    name: "Júbilo Estudios",
+    description: "Soluciones digitales desde uruguay para el mundo.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
+  {
+    picture: "https://www.buscojobs.com/static/img/favicon/favicon.ico",
+    url: "https://www.buscojobs.com.uy/",
+    name: "Buscojobs",
+    description: "Conectamos talento con oportunidades",
+    meta: {
+      allowFullRemote: true,
       hasPhysicalOffices: true
     }
   },
