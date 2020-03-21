@@ -350,4 +350,14 @@ export default [
       hasPhysicalOffices: true
     }
   },
+  {
+    picture: "https://jigsolabs.com/wp-content/uploads/2019/06/cropped-favicon-jigso-1_Mesa-de-trabajo-1-180x180.png",
+    url: "https://jigsolabs.com/",
+    name: "Jigso Labs",
+    description: "Servicios, consultoría y capacitación centrados en el usuario y la calidad",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: false
+    }
+  }
 ];
