@@ -350,4 +350,14 @@ export default [
       hasPhysicalOffices: true
     }
   },
+  {
+    picture: "https://wp.inmindsoftware.com/wp-content/uploads/2018/07/logo_welcome.png",
+    url: "https://www.inmindsoftware.com/",
+    name: "INMIND",
+    description: "Mobile and blockchain experts. We deliver cutting-edge technology around mobile and blockchain.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  }
 ];
