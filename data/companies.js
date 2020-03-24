@@ -400,5 +400,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: false
     }
-  }
+  },
+  {
+    picture: "https://www.kanbanconsultores.com/web/image/res.company/1/logo?unique=d79d171.png",
+    url: "https://www.kanbanconsultores.com/",
+    name: "Kanban Consultores",
+    description: "Diseñamos procesos operativos utilizando la metodología Kanban.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
 ];
