@@ -359,5 +359,15 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     }
+  },
+  {
+    picture: "https://jubilo-uploads.s3.amazonaws.com/jubilo-black-corp.svg",
+    url: "https://spacedev.uy/",
+    name: "Jubilo Studios",
+    description: "Soluciones digitales en uruguay para el mundo",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
   }
 ];
