@@ -411,4 +411,14 @@ export default [
       hasPhysicalOffices: true
     }
   },
+  {
+    picture: "https://houlak.com/assets/images/favicon.png",
+    url: "https://www.houlak.com/",
+    name: "Houlak",
+    description: "We are in the art of software creation. We transform ideas into software masterpieces.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+  },
 ];
