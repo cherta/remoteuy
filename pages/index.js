@@ -152,10 +152,17 @@ export default () => {
   return (
     <Layout>
       <Head>
-        <title>
-          Listado de empresas uruguayas que promueven el trabajo remoto o
-          distribuído
-        </title>
+        <title>Empresas uruguayas que promueven el trabajo remoto</title>
+        <meta
+          property="og:title"
+          content="Empresas uruguayas que promueven el trabajo remoto"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://remote.uy" />
+        <meta
+          property="og:image"
+          content="https://remote.uy/images/arseniy-kapran-hkjUkfqaVpU-unsplash.jpg"
+        />
       </Head>
       <Content>
         <Title>Remote Uruguay</Title>
