@@ -5,7 +5,7 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 import * as gtag from "../lib/gtag";
 
-Router.events.on("routeChangeComplete", url => gtag.pageview(url));
+Router.events.on("routeChangeComplete", (url) => gtag.pageview(url));
 
 const theme = {}; // Leaving this here just in case
 
@@ -16,7 +16,7 @@ export default class RemoteUYApp extends App {
       <ThemeProvider theme={theme}>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
             rel="stylesheet"
           />
 
