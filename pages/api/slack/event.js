@@ -18,7 +18,7 @@ export default async (req, res) => {
   const matcher = /[#]+[A-Za-z0-9-_]+/g;
   const matches = event.text.match(matcher);
 
-  if (!matches || !matches.includes("#job-offer")) {
+  if (!matches || !matches.includes(process.env.MATCHING_TAG)) {
     res.status(422).send("");
     return;
   }
