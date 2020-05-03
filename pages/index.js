@@ -157,6 +157,10 @@ export default () => {
           property="og:title"
           content="Empresas uruguayas que promueven el trabajo remoto"
         />
+        <meta
+          property="og:description"
+          content="Remote.uy es un listado de empresas uruguayas que promueven el trabajo remoto o distribuído. Si querés agregar una empresa podés ayudarnos mandando un PR a nuestro repositorio de GitHub"
+        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://remote.uy" />
         <meta
