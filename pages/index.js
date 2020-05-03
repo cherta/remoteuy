@@ -1,8 +1,7 @@
 import React from "react";
-import NextLink from "next/link";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import companies from "../data/companies";
 import { Company } from "../components/Company";
 
@@ -181,14 +180,14 @@ export default () => {
         <IntroContainer>
           <IntroPicture src="/images/arseniy-kapran-hkjUkfqaVpU-unsplash.jpg"></IntroPicture>
           <Credit>
-            Photo by{" "}
+            Photo by
             <a
               href="https://unsplash.com/@whatam1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
               target="_blank"
             >
               Arseniy Kapran
-            </a>{" "}
-            on{" "}
+            </a>
+            on
             <a
               href="https://unsplash.com/s/photos/mate-computadora?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
               target="_blank"
@@ -209,6 +208,17 @@ export default () => {
         <Paragraph>
           <a href="https://github.com/cherta/remoteuy" target="_blank">
             GitHub
+          </a>{" "}
+          |
+          <a
+            href="https://github.com/cherta/remoteuy/graphs/contributors"
+            target="_blank"
+          >
+            Autores: Gabriel Chertok &amp; y una larga lista de personas
+          </a>
+          |
+          <a href="http://owu.herokuapp.com/" target="_blank">
+            Open Web Uruguay
           </a>
         </Paragraph>
       </Footer>
