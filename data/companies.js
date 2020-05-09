@@ -447,4 +447,14 @@ export default [
       hasPhysicalOffices: true
     }
   },
+  {	
+    picture: "https://horus.com.uy/img/horus_favicon.ico",
+    url: "https://horus.com.uy/",
+    name: "Horus Studio",
+    description: "Design and development of winning mobile apps.",
+    meta: {
+    allowFullRemote: true,
+    hasPhysicalOffices: true,
+    },
+  },
 ];
