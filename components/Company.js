@@ -5,37 +5,41 @@ import { faGlobeAmericas, faBuilding } from "@fortawesome/free-solid-svg-icons";
 
 const icons = {
   allowFullRemote: faGlobeAmericas,
-  hasPhysicalOffices: faBuilding
+  hasPhysicalOffices: faBuilding,
 };
 
 const descriptions = {
-  allowFullRemote: `Allows employees to work remote every day of the year`,
-  hasPhysicalOffices: `Has a physical office`
+  allowFullRemote: {
+    true: `Allows employees to be remote every day of the week`,
+    false: `Allow employees to be remote some days of the week`,
+  },
+  hasPhysicalOffices: {
+    true: `Has a physical office`,
+    false: `Doesn't have a physical office`,
+  },
 };
 
 const Wrapper = styled.div`
   display: flex;
-  padding: 1.5rem 1rem;
-  margin: 1rem 1.5rem;
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
-    0 5px 15px 0 rgba(0, 0, 0, 0.08);
-  transition: 300ms;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem 1.5rem;
+  position: relative;
+`;
 
-  &:hover {
-    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.11),
-      0 5px 15px 0 rgba(0, 0, 0, 0.08);
-  }
+const TitleContainer = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 const Picture = styled.img`
-  width: 48px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
   object-fit: contain;
+  margin-right: 0.5rem;
 `;
 
-const Information = styled.div`
-  padding: 0 0.5rem;
-`;
+const Information = styled.div``;
 
 const Title = styled.h2`
   font-family: "Montserrat", sans-serif;
@@ -66,6 +70,9 @@ const Description = styled.p`
 `;
 
 const IconList = styled.div`
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
   display: flex;
   margin-top: 0.5rem;
 
@@ -80,11 +87,22 @@ const IconList = styled.div`
   }
 `;
 
-export const Company = ({ name, url, picture, description, color, meta }) => {
+const Icon = styled(FontAwesomeIcon)`
+  opacity: ${({ active }) => (active ? 1 : 0.3)};
+`;
+
+const BaseCompany = ({
+  name,
+  url,
+  picture,
+  description,
+  meta = {},
+  ...rest
+}) => {
   return (
-    <Wrapper color={color}>
-      <Picture src={picture} />
-      <Information>
+    <Wrapper {...rest}>
+      <TitleContainer>
+        <Picture src={picture} />
         <Title>
           {url ? (
             <a href={url} target="_blank">
@@ -94,21 +112,25 @@ export const Company = ({ name, url, picture, description, color, meta }) => {
             name
           )}
         </Title>
+      </TitleContainer>
+      <Information>
         <Description title={description}>{description}</Description>
         <IconList>
-          {Object.keys(meta)
-            .filter(key => !!meta[key])
-            .map(key => {
-              return (
-                <FontAwesomeIcon
-                  data-tip={descriptions[key]}
-                  key={key}
-                  icon={icons[key]}
-                />
-              );
-            })}
+          {Object.keys(meta).map((key) => {
+            const active = !!meta[key];
+            return (
+              <Icon
+                key={key}
+                data-tip={descriptions[key][active]}
+                icon={icons[key]}
+                active={active}
+              />
+            );
+          })}
         </IconList>
       </Information>
     </Wrapper>
   );
 };
+
+export const Company = styled(BaseCompany)``;

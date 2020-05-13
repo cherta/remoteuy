@@ -1,5 +1,5 @@
 import React from "react";
-import NextLink from "next/link";
+import Head from "next/head";
 import dynamic from "next/dynamic";
 import styled from "styled-components";
 import companies from "../data/companies";
@@ -9,94 +9,220 @@ const ReactTooltip = dynamic(() => import("react-tooltip"), { ssr: false });
 
 const Layout = styled.div``;
 
-const Header = styled.header`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0 0.5rem;
-  justify-content: space-between;
-  height: 4.5rem;
-  background: #fff;
-  box-shadow: 0px 1px 12px 0px rgba(35, 43, 47, 0.25);
-  position: fixed;
-  width: 100%;
-  top: 0;
-`;
-
 const Title = styled.h1`
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
   color: #232b2f;
-  span {
-    font-weight: 400;
-    font-size: 2rem;
-  }
-`;
-
-const Link = styled.a`
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  color: white;
+  margin-bottom: 2rem;
 `;
 
 const Content = styled.section`
-  max-width: 720px;
-  margin: 0 auto 0 auto;
-  margin-top: 6.375rem;
-  text-align: center;
-  * {
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  margin: 12rem auto 0 auto;
+  @media (max-width: 1200px) {
+    padding: 0 0.5rem;
+    margin: 4rem auto 0 auto;
+  }
+`;
+
+const IntroContainer = styled.div`
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  align-self: center;
+  @media (max-width: 1200px) {
+    width: 100vw;
+  }
+`;
+
+const IntroPicture = styled.img`
+  width: 1200px;
+  height: 600px;
+  object-fit: cover;
+  @media (max-width: 1200px) {
+    width: 100%;
   }
 `;
 
 const Paragraph = styled.p`
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
   color: #232b2f;
-  margin-bottom: 1.5rem;
-  padding: 0 1rem;
+  line-height: 1.2;
+
+  b {
+    font-weight: 700;
+  }
+
+  a {
+    padding: 0 0.2rem;
+    color: #232b2f;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: #dcd4d0;
+    background: #232b2f;
+  }
+`;
+
+const Credit = styled(Paragraph)`
+  font-size: 0.75rem;
+  text-align: right;
+  margin-top: 0.3rem;
+`;
+
+const CompaniesGrid = styled.div`
+  display: grid;
+  align-self: center;
+  width: 1200px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    width: 100vw;
+  }
+
+  @media (min-width: 1200px) {
+    ${Company}:nth-child(3n+1):nth-last-child(-n+3),
+    ${Company}:nth-child(3n+1):nth-last-child(-n+3) ~ ${Company} {
+      border-bottom: none;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    ${Company}:nth-child(2n+1):nth-last-child(-n+2),
+    ${Company}:nth-child(2n+1):nth-last-child(-n+2) ~ ${Company} {
+      border-bottom: none;
+    }
+  }
+
+  
+
+  ${Company} {
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+
+    @media (min-width: 1200px) {
+      &:nth-child(3n) {
+        border-right: none;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      &:nth-child(2n) {
+        border-right: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      & {
+        border-right: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+`;
+
+const Footer = styled.div`
+  margin-top: 4rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  ${Paragraph} {
+    font-size: 0.7rem;
+  }
 `;
 
 export default () => {
   return (
     <Layout>
-      <Header>
-        <Title>
-          🌎<span>.uy</span>
-        </Title>
-        {/* <NextLink href="/resources">
-          <Link>Para leer 📘</Link>
-        </NextLink> */}
-      </Header>
+      <Head>
+        <title>Empresas uruguayas que promueven el trabajo remoto</title>
+        <meta
+          property="og:title"
+          content="Empresas uruguayas que promueven el trabajo remoto"
+        />
+        <meta
+          property="og:description"
+          content="Remote.uy es un listado de empresas uruguayas que promueven el trabajo remoto o distribuído. Si querés agregar una empresa podés ayudarnos mandando un PR a nuestro repositorio de GitHub"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://remote.uy" />
+        <meta
+          property="og:image"
+          content="https://remote.uy/images/arseniy-kapran-hkjUkfqaVpU-unsplash.jpg"
+        />
+      </Head>
       <Content>
+        <Title>Remote Uruguay</Title>
         <Paragraph>
-          remote.uy es un listado de empresas uruguayas que promueven el trabajo
-          remoto o distribuído.
-        </Paragraph>
-        <Paragraph>
-          Si querés agregar una empresa podés ayudarnos{" "}
+          Remote.uy es un listado de empresas uruguayas que promueven el trabajo
+          remoto o distribuído. Si querés agregar una empresa podés ayudarnos{" "}
           <a href="https://github.com/cherta/remoteuy" target="_blank">
             mandando un PR a nuestro repositorio de GH
           </a>
           .
         </Paragraph>
-        {companies.map((company, index) => {
-          return (
-            <Company
-              key={company.name}
-              color={index % 2 === 0 ? "light" : "dark"}
-              {...company}
-            />
-          );
-        })}
+        <IntroContainer>
+          <IntroPicture src="/images/arseniy-kapran-hkjUkfqaVpU-unsplash.jpg"></IntroPicture>
+          <Credit>
+            Photo by
+            <a
+              href="https://unsplash.com/@whatam1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+            >
+              Arseniy Kapran
+            </a>
+            on
+            <a
+              href="https://unsplash.com/s/photos/mate-computadora?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+            >
+              Unsplash
+            </a>
+          </Credit>
+        </IntroContainer>
+
+        <Title>Empresas</Title>
+        <CompaniesGrid>
+          {companies.map((company) => {
+            return <Company key={company.name} {...company} />;
+          })}
+        </CompaniesGrid>
       </Content>
-      <ReactTooltip clickable delayHide={500} place="right" />
-      {/* <Button>
-        <Link>
-          <a href="">➕</a>
-        </Link>
-      </Button> */}
+      <Footer>
+        <Paragraph>
+          <a href="https://github.com/cherta/remoteuy" target="_blank">
+            GitHub
+          </a>{" "}
+          |
+          <a
+            href="https://github.com/cherta/remoteuy/graphs/contributors"
+            target="_blank"
+          >
+            Autores: Gabriel Chertok &amp; y una larga lista de personas
+          </a>
+          |
+          <a href="http://owu.herokuapp.com/" target="_blank">
+            Open Web Uruguay
+          </a>
+        </Paragraph>
+      </Footer>
+      <ReactTooltip clickable delayHide={500} place="left" />
     </Layout>
   );
 };
