@@ -447,4 +447,14 @@ export default [
       hasPhysicalOffices: true
     }
   },
+  {
+    picture: "https://www.cuti.org.uy/data/f/c/socios/237/160x160/logo-png-transparente-160x160.png",
+    url: "https://www.vairix.com/",
+    name: "VAIRIX Software Development",
+    description: "Nearshore software development company that provides staff augmentation and custom software development services.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    },
+  },
 ];
