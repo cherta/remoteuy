@@ -173,7 +173,7 @@ export default [
   },
   {
     picture:
-      "https://scontent.fmvd1-1.fna.fbcdn.net/v/t1.0-9/12009649_1680564098845933_8958272112656141499_n.png?_nc_cat=108&_nc_sid=85a577&_nc_ohc=6F5ZhpxyDc0AX8ZMnb5&_nc_ht=scontent.fmvd1-1.fna&oh=528c41bc8aa02f2306fec22942ffd98c&oe=5E9354CF",
+      "https://www.cuti.org.uy/data/f/c/socios/660/160x160/logo-kreithech.png",
     url: "https://kreitech.io",
     name: "Kreitech",
     description:
@@ -441,20 +441,21 @@ export default [
     picture: "https://houlak.com/assets/images/favicon.png",
     url: "https://www.houlak.com/",
     name: "Houlak",
-    description: "We are in the art of software creation. We transform ideas into software masterpieces.",
+    description:
+      "We are in the art of software creation. We transform ideas into software masterpieces.",
     meta: {
       allowFullRemote: true,
-      hasPhysicalOffices: true
-    }
+      hasPhysicalOffices: true,
+    },
   },
-  {	
+  {
     picture: "https://horus.com.uy/img/horus_favicon.ico",
     url: "https://horus.com.uy/",
     name: "Horus Studio",
     description: "Design and development of winning mobile apps.",
     meta: {
-    allowFullRemote: true,
-    hasPhysicalOffices: true,
+      allowFullRemote: true,
+      hasPhysicalOffices: true,
     },
   },
 ];
