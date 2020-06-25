@@ -332,6 +332,7 @@ export default [
       "A software factory serving clients all around the world. We develop Full-Stack projects expanding our clients' capabilities and resources. For us the sky is no longer the limit; There's a whole outerspace to excel in.",
     meta: {
       allowFullRemote: true,
+<<<<<<< HEAD
       hasPhysicalOffices: true,
     },
   },
@@ -467,5 +468,19 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     },
+=======
+      hasPhysicalOffices: false
+    }
+  },
+  {
+    picture: "https://www.infuy.com/images/infuy.svg",
+    url: "https://www.infuy.com/",
+    name: "INFUY",
+    description: "Your challenges. Our innovative solutions.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    }
+>>>>>>> Adding INFUY
   },
 ];
