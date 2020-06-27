@@ -468,4 +468,14 @@ export default [
       hasPhysicalOffices: true
     },
   },
+  {
+    picture: "https://zircon.tech/wp-content/uploads/2019/10/zirconsvg.png",
+    url: "https://www.zircon.tech/",
+    name: "ZIRCONTech",
+    description: "A trusted partner for the technologies driving the future. We help organizations to build their digital transformation.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    },
+  },
 ];
