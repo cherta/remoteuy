@@ -214,7 +214,7 @@ export default () => {
             href="https://github.com/cherta/remoteuy/graphs/contributors"
             target="_blank"
           >
-            Autores: Gabriel Chertok &amp; y una larga lista de personas
+            Autores: Gabriel Chertok &amp; una larga lista de personas
           </a>
           |
           <a href="http://owu.herokuapp.com/" target="_blank">
