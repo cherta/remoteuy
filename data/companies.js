@@ -478,4 +478,14 @@ export default [
       hasPhysicalOffices: true
     },
   },
+  {
+    picture: "https://www.genexus.com/media/images/genexus_logo_svg.svg",
+    url: "https://www.genexus.com",
+    name: "GeneXus",
+    description: "GeneXus is the best low-code platform you've never heard of",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true
+    },
+  }
 ];
