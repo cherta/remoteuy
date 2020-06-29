@@ -479,7 +479,7 @@ export default [
     },
   },
   {
-    picture: "https://www.genexus.com/media/images/genexus_logo_svg.svg",
+    picture: "https://www.genexus.com/media/images/fav_icon_gx2014.png",
     url: "https://www.genexus.com",
     name: "GeneXus",
     description: "GeneXus is the best low-code platform you've never heard of",
