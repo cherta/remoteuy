@@ -490,7 +490,7 @@ export default [
   },
 {
     picture: "http://www.transactility.com/img/misc/logo_transactility.png",
-    url: "https://transactility.com/",
+    url: "http://www.transactility.com/",
     name: "Transactility Inc.",
     description: "Commercial arm of the Uruguayan jPOS project, in use in over 100 countries.",
     meta: {
