@@ -29,27 +29,9 @@ const Content = styled.section`
   }
 `;
 
-const IntroContainer = styled.div`
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  align-self: center;
-  @media (max-width: 1200px) {
-    width: 100vw;
-  }
-`;
-
-const IntroPicture = styled.img`
-  width: 1200px;
-  height: 600px;
-  object-fit: cover;
-  @media (max-width: 1200px) {
-    width: 100%;
-  }
-`;
-
 const Paragraph = styled.p`
   font-family: "Open Sans", sans-serif;
-  font-size: 1.2rem;
+  font-size: ${({ small }) => `${small ? `0.7rem` : `1.2rem`}`};
   color: #232b2f;
   line-height: 1.2;
 
@@ -69,82 +51,32 @@ const Paragraph = styled.p`
   }
 `;
 
-const Credit = styled(Paragraph)`
-  font-size: 0.75rem;
-  text-align: right;
-  margin-top: 0.3rem;
-`;
-
-const CompaniesGrid = styled.div`
-  display: grid;
-  align-self: center;
-  width: 1200px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  gap: 1px 1px;
-
-  @media (max-width: 1200px) {
-    grid-template-columns: repeat(2, 1fr);
-    width: 100vw;
-  }
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    width: 100vw;
-  }
-
-  @media (min-width: 1200px) {
-    ${Company}:nth-child(3n+1):nth-last-child(-n+3),
-    ${Company}:nth-child(3n+1):nth-last-child(-n+3) ~ ${Company} {
-      border-bottom: none;
-    }
-  }
-
-  @media (max-width: 1200px) {
-    ${Company}:nth-child(2n+1):nth-last-child(-n+2),
-    ${Company}:nth-child(2n+1):nth-last-child(-n+2) ~ ${Company} {
-      border-bottom: none;
-    }
-  }
-
-  
-
-  ${Company} {
-    border-bottom: 1px solid grey;
-    border-right: 1px solid grey;
-
-    @media (min-width: 1200px) {
-      &:nth-child(3n) {
-        border-right: none;
-      }
-    }
-
-    @media (max-width: 1200px) {
-      &:nth-child(2n) {
-        border-right: none;
-      }
-    }
-
-    @media (max-width: 768px) {
-      & {
-        border-right: none;
-      }
-    }
-
-    @media (max-width: 768px) {
-      &:last-child {
-        border-bottom: none;
-      }
-    }
-  }
-`;
-
 const Footer = styled.div`
   margin-top: 4rem;
   margin-bottom: 0.5rem;
   text-align: center;
   ${Paragraph} {
     font-size: 0.7rem;
+  }
+`;
+
+const List = styled.ul`
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  color: #232b2f;
+  line-height: 1.2;
+  list-style-type: disc;
+  margin-top: 1rem;
+  li {
+    margin-bottom: 0.5rem;
+  }
+  li a {
+    color: #232b2f;
+    text-decoration: underline;
+  }
+
+  li a:hover {
+    color: #232b2f;
   }
 `;
 
@@ -195,46 +127,44 @@ export default () => {
         />
       </Head>
       <Header>
-        <MenuItem href="/resources">
-          <a>Recursos</a>
+        <MenuItem href="/">
+          <a>Inicio</a>
         </MenuItem>
       </Header>
       <Content>
-        <Title>Remote Uruguay</Title>
+        <Title>Recursos</Title>
         <Paragraph>
-          Remote.uy es un listado de empresas uruguayas que promueven el trabajo
-          remoto o distribuído. Si querés agregar una empresa podés ayudarnos{" "}
-          <a href="https://github.com/cherta/remoteuy" target="_blank">
-            mandando un PR a nuestro repositorio de GH
-          </a>
-          .
+          Listado de recursos para gente que quiere mudarse a Uruguay.
         </Paragraph>
-        <IntroContainer>
-          <IntroPicture src="/images/arseniy-kapran-hkjUkfqaVpU-unsplash.jpg"></IntroPicture>
-          <Credit>
-            Photo by
+        <List>
+          <li>
             <a
-              href="https://unsplash.com/@whatam1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              href="https://www.uruguayxxi.gub.uy/es/quiero-invertir/guias-inversor/establecer-una-empresa/"
               target="_blank"
             >
-              Arseniy Kapran
-            </a>
-            on
+              Querés abrir una empresa en Uruguay?
+            </a>{" "}
+            - Esto te permite facturar a empresas de Uruguay y el exterior
+          </li>
+          <li>
             <a
-              href="https://unsplash.com/s/photos/mate-computadora?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              href="https://www.investinuruguay.uy/es/servicios-herramientas/fast-track/"
               target="_blank"
             >
-              Unsplash
-            </a>
-          </Credit>
-        </IntroContainer>
-
-        <Title>Empresas</Title>
-        <CompaniesGrid>
-          {companies.map((company) => {
-            return <Company key={company.name} {...company} />;
-          })}
-        </CompaniesGrid>
+              Querés trabajar en Uruguay?
+            </a>{" "}
+            - Esto te permite trabajar en Uruguay como dependiente
+          </li>
+        </List>
+        <br />
+        <br />
+        <Paragraph small>
+          Gracias a{" "}
+          <a href="https://twitter.com/isaantonaccio" target="_blank">
+            Isabella Antonaccio
+          </a>{" "}
+          por facilitarnos estos datos.
+        </Paragraph>
       </Content>
       <Footer>
         <Paragraph>
