@@ -9,6 +9,16 @@ export default [
       hasPhysicalOffices: true,
     },
   },
+   {
+    picture: "https://abstracta-static-assets.s3.amazonaws.com/images/abstracta-favicon.ico.ico",
+    url: "https://www.abstracta.us",
+    name: "Abstracta",
+    description: "Software testing (performance, automation, QA, accessibility, security, etc.)",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true,
+    },
+  },
   {
     picture: "https://www.wyeworks.com/favicon.png",
     url: "https://www.wyeworks.com",
