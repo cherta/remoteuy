@@ -488,7 +488,7 @@ export default [
       hasPhysicalOffices: true
     },
   },
-{
+  {
     picture: "http://www.transactility.com/img/misc/logo_transactility.png",
     url: "http://www.transactility.com/",
     name: "Transactility Inc.",
@@ -497,12 +497,23 @@ export default [
       allowFullRemote: true,
       hasPhysicalOffices: true
     },
- },
- {
+  },
+  {
     picture: "https://abstracta-static-assets.s3.amazonaws.com/images/abstracta-favicon.ico.ico",
     url: "https://www.abstracta.us",
     name: "Abstracta",
     description: "Software testing (performance, automation, QA, accessibility, security, etc.)",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: true,
+    },
+  },
+  {
+    picture: "https://dominion-cs.com/wp-content/uploads/2018/03/cropped-favicon-dom-32x32.png",
+    url: "https://dominion-cs.com/",
+    name: "Dominion Capital Strategies",
+    description:
+      "Translating complicated financial speak, into simple products that anybody can understand",
     meta: {
       allowFullRemote: true,
       hasPhysicalOffices: true,
