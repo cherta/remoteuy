@@ -20,7 +20,7 @@ const Home: BlitzPage<HomeProps> = ({ companies }) => {
         </p>
         <div className="flex flex-col self-center my-12 xl:w-1200 -mx-2">
           <img
-            src="https://remote.uy/images/arseniy-kapran-hkjUkfqaVpU-unsplash.jpg"
+            src="/images/arseniy-kapran-hkjUkfqaVpU-unsplash.jpg"
             className="object-cover h-600 w-full"
             alt="A big mate"
           />
