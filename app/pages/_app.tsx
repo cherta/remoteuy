@@ -20,6 +20,6 @@ export default function App({ Component, pageProps }: AppProps) {
   )
 }
 
-function RootErrorFallback({ error }) {
+function RootErrorFallback({ error, resetErrorBoundary }) {
   return <ErrorComponent statusCode={error.statusCode || 400} title={error.message || error.name} />
 }
