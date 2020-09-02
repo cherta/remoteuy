@@ -1,0 +1,25 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = ["sqlite", "postgres"]
+  url = "***"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// --------------------------------------
+
+model Company {
+  id               Int      @default(autoincrement()) @id
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  name             String
+  description      String
+  logo             String
+  url              String   @default("")
+  hasOffices       Boolean
+  allowsFullRemote Boolean
+}

@@ -1,0 +1,6 @@
+# Prisma Migrate lockfile v1
+
+20200825212132-initial-migration
+20200825214446-create-companies
+20200827175642-remove-auth
+20200828115413-add-url-to-company

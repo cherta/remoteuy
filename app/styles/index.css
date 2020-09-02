@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: rgb(35, 43, 47);
+}
+
+@responsive {
+  .w-1200 {
+    width: 1200px;
+  }
+}
+
+.h-600 {
+  height: 600px;
+}
+
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.cursor-help {
+  cursor: help;
+}
+
+@media (min-width: 1280px) {
+  .company:nth-child(3n + 1):nth-last-child(-n + 3),
+  .company:nth-child(3n + 1):nth-last-child(-n + 3) ~ .company {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 1280px) {
+  .company:nth-child(2n + 1):nth-last-child(-n + 2),
+  .company:nth-child(2n + 1):nth-last-child(-n + 2) ~ .company {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .company:nth-child(3n) {
+    border-right: none;
+  }
+}
+@media (max-width: 1280px) {
+  .company:nth-child(2n) {
+    border-right: none;
+  }
+}
+@media (max-width: 768px) {
+  .company {
+    border-right: none;
+  }
+  .company.last-child {
+    border-bottom: none;
+  }
+}

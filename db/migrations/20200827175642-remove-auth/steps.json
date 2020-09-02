@@ -1,0 +1,23 @@
+{
+  "version": "0.3.14-fixed",
+  "steps": [
+    {
+      "tag": "DeleteModel",
+      "model": "User"
+    },
+    {
+      "tag": "DeleteModel",
+      "model": "Session"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "Company",
+      "field": "user"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "Company",
+      "field": "userId"
+    }
+  ]
+}
