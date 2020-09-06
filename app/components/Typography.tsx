@@ -16,6 +16,6 @@ type ParagraphProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLParagraphElement>,
   HTMLParagraphElement
 >
-export const Praagraph = ({ children, className, ...rest }: ParagraphProps) => {
+export const Paragraph = ({ children, className, ...rest }: ParagraphProps) => {
   return <p className={`text-lg ${className}`}>{children}</p>
 }

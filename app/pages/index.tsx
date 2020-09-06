@@ -5,7 +5,7 @@ import superjson from "superjson"
 import Layout from "app/layouts/Layout"
 import Companies from "app/companies/components/Companies"
 import getCompanies from "app/companies/queries/getCompanies"
-import { Title, Praagraph } from "app/components/Typography"
+import { Title, Paragraph } from "app/components/Typography"
 
 type HomeProps = { companies: Company[] }
 
@@ -14,11 +14,11 @@ const Home: BlitzPage<HomeProps> = ({ companies }) => {
     <main className="flex flex-col mx-2">
       <Suspense fallback="Loading...">
         <Title>Remote Uruguay</Title>
-        <Praagraph>
+        <Paragraph>
           Remote.uy es un listado de empresas uruguayas que promueven el trabajo remoto o
           distribuído. Si querés agregar una empresa podés ayudarnos mandando un PR a nuestro
           repositorio de GH.
-        </Praagraph>
+        </Paragraph>
         <div className="flex flex-col self-center my-12 xl:w-1200 -mx-2">
           <img
             src="/images/arseniy-kapran-hkjUkfqaVpU-unsplash.jpg"
