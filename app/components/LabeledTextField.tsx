@@ -19,34 +19,26 @@ export const LabeledTextField = React.forwardRef<HTMLInputElement, LabeledTextFi
     } = useField(name)
 
     return (
-      <div {...outerProps}>
+      <div className="mb-4" {...outerProps}>
         <label>
-          {label}
-          <input {...input} disabled={submitting} {...props} ref={ref} />
+          {label && <div>{label}</div>}
+          <input
+            {...input}
+            disabled={submitting}
+            className={`border border-gray-300 p-2 border border-radius-0 outline-none ${
+              touched && error && "border border-red-500"
+            }`}
+            autoComplete="off"
+            {...props}
+            ref={ref}
+          />
         </label>
 
         {touched && (error || submitError) && (
-          <div role="alert" style={{ color: "red" }}>
+          <div role="alert" className="text-sm text-red-500">
             {error || submitError}
           </div>
         )}
-
-        <style jsx>{`
-          label {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            font-size: 1rem;
-          }
-          input {
-            font-size: 1rem;
-            padding: 0.25rem 0.5rem;
-            border-radius: 3px;
-            border: 1px solid purple;
-            appearance: none;
-            margin-top: 0.5rem;
-          }
-        `}</style>
       </div>
     )
   }

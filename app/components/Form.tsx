@@ -34,25 +34,23 @@ export function Form<FormValues extends Record<string, unknown>>({
       }}
       onSubmit={onSubmit}
       render={({ handleSubmit, submitting, submitError }) => (
-        <form onSubmit={handleSubmit} className="form" {...props}>
-          {/* Form fields supplied as children are rendered here */}
-          {children}
-
+        <form onSubmit={handleSubmit} {...props}>
           {submitError && (
-            <div role="alert" style={{ color: "red" }}>
+            <div role="alert" className="text-white bg-red-500 p-2 mb-4">
               {submitError}
             </div>
           )}
 
-          <button type="submit" disabled={submitting}>
+          {/* Form fields supplied as children are rendered here */}
+          {children}
+
+          <button
+            type="submit"
+            className="border-0 bg-gray-300 hover:bg-gray-500 focus:outline-none p-2"
+            disabled={submitting}
+          >
             {submitText}
           </button>
-
-          <style global jsx>{`
-            .form > * + * {
-              margin-top: 1rem;
-            }
-          `}</style>
         </form>
       )}
     />

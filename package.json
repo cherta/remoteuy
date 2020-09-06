@@ -30,6 +30,7 @@
   "dependencies": {
     "@prisma/cli": "2.5.1",
     "@prisma/client": "2.5.1",
+    "@sendgrid/client": "7.2.5",
     "blitz": "0.18.0",
     "final-form": "4.20.1",
     "react": "0.0.0-experimental-33c3af284",
@@ -47,6 +48,7 @@
     "@testing-library/react-hooks": "3.4.1",
     "@types/jest": "26.0.10",
     "@types/react": "16.9.47",
+    "@types/uuid": "8.3.0",
     "@typescript-eslint/eslint-plugin": "3.10.1",
     "@typescript-eslint/parser": "3.10.1",
     "babel-eslint": "10.1.0",
