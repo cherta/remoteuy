@@ -79,6 +79,11 @@ const Header = () => {
           <MenuItem>
             <Link href="/resources">Recursos</Link>
           </MenuItem>
+          {user && (
+            <MenuItem>
+              <Link href="/companies/claim">Reclamar empresa</Link>
+            </MenuItem>
+          )}
           {user && <MenuItem>|</MenuItem>}
           {user && (
             <MenuItem>
@@ -136,7 +141,7 @@ const Layout = ({
       <Suspense fallback={null}>
         <Header />
       </Suspense>
-      {children}
+      <Suspense fallback={null}>{children}</Suspense>
       <Footer />
     </div>
   </>

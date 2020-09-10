@@ -1828,7 +1828,19 @@
   dependencies:
     pkg-up "^3.1.0"
 
-"@sendgrid/client@7.2.5", "@sendgrid/client@^7.2.5":
+"@react-hook/latest@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@react-hook/latest/-/latest-1.0.2.tgz#767eb6974f91eef353981b8b60a87147dadecb18"
+  integrity sha512-zLtOIToct1EBTbwldkMJsXC2eCsmWOOP7z6UG0M/sCgnPExtIjvVMCpPESvPnMbQzDZytXVy0nvMbUuK2gZs2A==
+
+"@react-hook/timeout@2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@react-hook/timeout/-/timeout-2.1.1.tgz#d4db750002a0231027897d4370040cbcc02a118d"
+  integrity sha512-nl76ab/tLU8tBtn54gX12z/XalQSLkZl86ZqH6HoV32y4+XzZq6LCQo9fJJpxqZpT2ueXiM5YnbPPghdHBlRWg==
+  dependencies:
+    "@react-hook/latest" "^1.0.2"
+
+"@sendgrid/client@7.2.5":
   version "7.2.5"
   resolved "https://registry.yarnpkg.com/@sendgrid/client/-/client-7.2.5.tgz#912575a5ecfe91c250eb6b267711dff2dea4e0f1"
   integrity sha512-UZxk0liUeOMwbBkvlFJUezzP+w+gV6n13IAbG49KEiqwOns02HeSinFwF/CK0vQfjr3wkXRGKS34gvic53rlOg==
@@ -1843,14 +1855,6 @@
   dependencies:
     chalk "^2.0.1"
     deepmerge "^4.2.2"
-
-"@sendgrid/mail@7.2.5":
-  version "7.2.5"
-  resolved "https://registry.yarnpkg.com/@sendgrid/mail/-/mail-7.2.5.tgz#cc101c13e613e9f1466308f96dfb6c9e6dc60a1f"
-  integrity sha512-kbv5Mzzx6xei26fD84S4yn/JJ3v2Pz/tRwl4WULhJlxqvfs2sTAdVZc1kjQ09ffg32iVE62eO74WhhLm+vcuJw==
-  dependencies:
-    "@sendgrid/client" "^7.2.5"
-    "@sendgrid/helpers" "^7.2.4"
 
 "@sindresorhus/is@^2.1.1":
   version "2.1.1"
@@ -8592,6 +8596,13 @@ pinkie@^2.0.0:
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
   integrity sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
 
+pipe-then@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/pipe-then/-/pipe-then-1.0.0.tgz#ad16e26a17eb0a8912427e3c8f9e1c25580b5a5a"
+  integrity sha1-rRbiahfrCokSQn48j54cJVgLWlo=
+  dependencies:
+    end-of-stream "^1.1.0"
+
 pirates@4.0.1, pirates@^4.0.0, pirates@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/pirates/-/pirates-4.0.1.tgz#643a92caf894566f91b2b986d2c66950a8e2fb87"
@@ -11227,6 +11238,11 @@ use-subscription@1.4.1:
   integrity sha512-7+IIwDG/4JICrWHL/Q/ZPK5yozEnvRm6vHImu0LKwQlmWGKeiF7mbAenLlK/cTNXrTtXHU/SFASQHzB6+oSJMQ==
   dependencies:
     object-assign "^4.1.1"
+
+use-timeout@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/use-timeout/-/use-timeout-1.1.0.tgz#622843678ff9e2c59a030b86baa36de0a8462f8a"
+  integrity sha512-1veqpjjjHvjQ7qcMrz72HnL+6WgsehNFnFbdKNsSGWa+GcbjXrPrfFiBj/wtzHBBB8h5WO4B3O7i54NT8RIr6w==
 
 use@^3.1.0:
   version "3.1.1"
