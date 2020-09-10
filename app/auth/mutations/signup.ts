@@ -21,7 +21,7 @@ const mailVerificationCode = async (user) => {
     method: "POST",
     body: {
       from: {
-        email: "cherta@remote..uy",
+        email: "cherta@remote.uy",
       },
       personalizations: [
         {
