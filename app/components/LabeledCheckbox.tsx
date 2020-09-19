@@ -1,22 +1,21 @@
 import React, { PropsWithoutRef } from "react"
 import { useField } from "react-final-form"
 
-export interface LabeledTextFieldProps extends PropsWithoutRef<JSX.IntrinsicElements["input"]> {
+export interface LabeledCheckboxProps extends PropsWithoutRef<JSX.IntrinsicElements["input"]> {
   /** Field name. */
   name: string
   /** Field label. */
   label: string
   /** Field type. Doesn't include radio buttons and checkboxes */
-  type?: "text" | "password" | "email" | "number"
   outerProps?: PropsWithoutRef<JSX.IntrinsicElements["div"]>
 }
 
-export const LabeledTextField = React.forwardRef<HTMLInputElement, LabeledTextFieldProps>(
-  ({ name, label, outerProps, ...props }, ref) => {
+export const LabeledCheckbox = React.forwardRef<HTMLInputElement, LabeledCheckboxProps>(
+  ({ name, label, outerProps, value, ...props }, ref) => {
     const {
       input,
       meta: { touched, error, submitError, submitting },
-    } = useField(name)
+    } = useField(name, { type: "checkbox" })
 
     return (
       <div className="mb-4" {...outerProps}>
@@ -24,6 +23,7 @@ export const LabeledTextField = React.forwardRef<HTMLInputElement, LabeledTextFi
           {label && <div>{label}</div>}
           <input
             {...input}
+            type="checkbox"
             disabled={submitting}
             className={`border border-gray-300 p-2 border border-radius-0 outline-none ${
               touched && error && "border border-red-500"
@@ -43,4 +43,4 @@ export const LabeledTextField = React.forwardRef<HTMLInputElement, LabeledTextFi
   }
 )
 
-export default LabeledTextField
+export default LabeledCheckbox

@@ -1,17 +1,124 @@
 import { Head, useRouter } from "blitz"
 import { Link } from "app/components/Link"
+import { useCurrentUser, CurrentUser } from "app/hooks/useCurrentUser"
+import { Suspense, useCallback } from "react"
+import logout from "app/auth/mutations/logout"
+import Loading from "app/components/Loading"
+
+type UserBadgeProps = JSX.IntrinsicElements["span"] & {
+  user: CurrentUser
+  className?: string
+}
+const UserBadge = ({ user, ...rest }: UserBadgeProps) => {
+  const router = useRouter()
+  const logoutHandler = useCallback(
+    async function (e) {
+      e.preventDefault()
+      await logout()
+      router.push("/")
+    },
+    [router]
+  )
+  return (
+    <span {...rest}>
+      {`Hola ${user.name ?? user.email}`},{" "}
+      <Link href="#" onClick={logoutHandler}>
+        no eres esta persona?
+      </Link>
+    </span>
+  )
+}
+
+type VerificationMessageProps = {
+  user?: CurrentUser
+}
+const VerificationMessage = ({ user }: VerificationMessageProps) => {
+  if (!user || user.verified) return null
+  return (
+    <div className="bg-yellow-500 p-2">
+      Por favor chequee su correo electrónico y verifique su cuenta
+    </div>
+  )
+}
+
+const Menu = ({ children }) => {
+  return (
+    <ul role="menu">
+      {children.map((child, index) => {
+        return (
+          <li className="inline" key={index}>
+            {child}
+          </li>
+        )
+      })}
+    </ul>
+  )
+}
+
+const MenuItem = ({ children, className = "", ...rest }: JSX.IntrinsicElements["span"]) => {
+  return (
+    <span className={`mr-2 ${className}`} {...rest}>
+      {children}
+    </span>
+  )
+}
 
 const Header = () => {
-  const router = useRouter()
+  const user = useCurrentUser()
   return (
-    <div className="m-2 flex justify-end">
-      {router.pathname !== "/" && (
-        <Link href="/" className="mr-2">
-          Home
-        </Link>
-      )}
-      {router.pathname !== "/resources" && <Link href="/resources">Resources</Link>}
-    </div>
+    <>
+      <div className="m-2 flex justify-end">
+        <Menu>
+          <MenuItem>
+            <Link href="/">Home</Link>
+          </MenuItem>
+          {!user && (
+            <MenuItem>
+              <Link href="/signup">Registrarse</Link>
+            </MenuItem>
+          )}
+          {!user && (
+            <MenuItem>
+              <Link href="/login">Login</Link>
+            </MenuItem>
+          )}
+          <MenuItem>
+            <Link href="/resources">Recursos</Link>
+          </MenuItem>
+          {user && (
+            <MenuItem>
+              <Link href="/admin/claims">Reclamar empresa</Link>
+            </MenuItem>
+          )}
+          {(user?.companies?.length || 0) > 0 && (
+            <>
+              <MenuItem>|</MenuItem>
+              <MenuItem>Empresas:</MenuItem>
+              <MenuItem>
+                {user?.companies
+                  ?.map((company) => (
+                    <Link
+                      key={company.id}
+                      href="/admin/companies/[id]"
+                      as={`/admin/companies/${company.id}`}
+                    >
+                      {company.name}
+                    </Link>
+                  ))
+                  .reduce((prev, curr) => [prev, ", ", curr] as any)}
+              </MenuItem>
+            </>
+          )}
+          {user && <MenuItem>|</MenuItem>}
+          {user && (
+            <MenuItem>
+              <UserBadge user={user} />
+            </MenuItem>
+          )}
+        </Menu>
+      </div>
+      <VerificationMessage user={user} />
+    </>
   )
 }
 
@@ -56,8 +163,10 @@ const Layout = ({
       />
     </Head>
     <div className="max-w-6xl xl:mt-48 lg:mt-4 mx-auto">
-      <Header />
-      {children}
+      <Suspense fallback={null}>
+        <Header />
+      </Suspense>
+      <Suspense fallback={<Loading />}>{children}</Suspense>
       <Footer />
     </div>
   </>

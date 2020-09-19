@@ -25,9 +25,12 @@ export const Company = ({
   allowsFullRemote,
   hasOffices,
   url,
-}: TCompany) => {
+  className = "",
+}: TCompany & { className?: string }) => {
   return (
-    <div className="company flex flex-col relative justify-center py-10 px-6 border-b border-r border-grey-600 relative">
+    <div
+      className={`company flex flex-col relative justify-center py-10 px-6 border-b border-r border-grey-600 relative ${className}`}
+    >
       <div className="flex items-center">
         <img src={logo} alt={`${name}'s logo`} className="w-12 h-12 object-contain mr-2" />
         <h2 className="text-2xl font-bold">

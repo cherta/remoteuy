@@ -1,28 +1,29 @@
 import React, { PropsWithoutRef } from "react"
 import { useField } from "react-final-form"
 
-export interface LabeledTextFieldProps extends PropsWithoutRef<JSX.IntrinsicElements["input"]> {
+type Option = [number, string]
+
+export interface LabeledDropDownProps extends PropsWithoutRef<JSX.IntrinsicElements["select"]> {
   /** Field name. */
   name: string
   /** Field label. */
   label: string
-  /** Field type. Doesn't include radio buttons and checkboxes */
-  type?: "text" | "password" | "email" | "number"
+  options: Option[]
+  selectedOption?: number
   outerProps?: PropsWithoutRef<JSX.IntrinsicElements["div"]>
 }
 
-export const LabeledTextField = React.forwardRef<HTMLInputElement, LabeledTextFieldProps>(
-  ({ name, label, outerProps, ...props }, ref) => {
+export const LabeledDropDown = React.forwardRef<HTMLSelectElement, LabeledDropDownProps>(
+  ({ name, label, outerProps, options, selectedOption, ...props }, ref) => {
     const {
       input,
       meta: { touched, error, submitError, submitting },
     } = useField(name)
-
     return (
       <div className="mb-4" {...outerProps}>
         <label>
           {label && <div>{label}</div>}
-          <input
+          <select
             {...input}
             disabled={submitting}
             className={`border border-gray-300 p-2 border border-radius-0 outline-none ${
@@ -30,7 +31,18 @@ export const LabeledTextField = React.forwardRef<HTMLInputElement, LabeledTextFi
             }`}
             {...props}
             ref={ref}
-          />
+          >
+            {options
+              .concat([[-1, "Seleccione una opcion"]])
+              .sort((a, b) => a[0] - b[0])
+              .map((option) => {
+                return (
+                  <option key={option[0]} value={option[0]} defaultValue={selectedOption}>
+                    {option[1]}
+                  </option>
+                )
+              })}
+          </select>
         </label>
 
         {touched && (error || submitError) && (
@@ -43,4 +55,4 @@ export const LabeledTextField = React.forwardRef<HTMLInputElement, LabeledTextFi
   }
 )
 
-export default LabeledTextField
+export default LabeledDropDown

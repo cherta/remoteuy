@@ -2,8 +2,8 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 datasource db {
-  provider = "postgres"
-  url      = env("DATABASE_URL")
+  provider = ["sqlite", "postgres"]
+  url = "***"
 }
 
 generator client {
@@ -22,27 +22,6 @@ model Company {
   url              String   @default("")
   hasOffices       Boolean
   allowsFullRemote Boolean
-  claims           Claim[]
-  userId           Int?
-  user             User?    @relation(fields: [userId], references: [id])
-}
-
-model Claim {
-  id        Int         @default(autoincrement()) @id
-  createdAt DateTime    @default(now())
-  updatedAt DateTime    @updatedAt
-  companyId Int?
-  company   Company?    @relation(fields: [companyId], references: [id])
-  userId    Int?
-  user      User?       @relation(fields: [userId], references: [id])
-  status    ClaimStatus
-  info      String?
-}
-
-enum ClaimStatus {
-  CREATED
-  APPROVED
-  REJECTED
 }
 
 model User {
@@ -56,8 +35,6 @@ model User {
   sessions         Session[]
   verificationCode String?   @unique
   verified         Boolean   @default(false)
-  claims           Claim[]
-  companies        Company[]
 }
 
 model Session {
