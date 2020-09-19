@@ -105,7 +105,7 @@ const Header = () => {
                       {company.name}
                     </Link>
                   ))
-                  .reduce((prev, curr) => [prev, ", ", curr])}
+                  .reduce((prev, curr) => [prev, ", ", curr] as any)}
               </MenuItem>
             </>
           )}
