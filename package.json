@@ -35,7 +35,7 @@
     "blitz": "0.22.1",
     "final-form": "4.20.1",
     "pipe-then": "1.0.0",
-    "react": "0.0.0-experimental-33c3af284",
+    "react": "0.14.0",
     "react-dom": "0.0.0-experimental-33c3af284",
     "react-error-boundary": "2.3.1",
     "react-final-form": "6.5.1",
