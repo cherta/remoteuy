@@ -2,7 +2,6 @@ import { Head, useRouter } from "blitz"
 import { Link } from "app/components/Link"
 import { useCurrentUser, CurrentUser } from "app/hooks/useCurrentUser"
 import { Suspense, useCallback } from "react"
-import { ReactQueryDevtools } from "react-query-devtools"
 import logout from "app/auth/mutations/logout"
 import Loading from "app/components/Loading"
 
