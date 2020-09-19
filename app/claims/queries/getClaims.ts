@@ -1,17 +1,25 @@
 import { SessionContext } from "blitz"
-import db from "db"
+import db, { FindManyClaimArgs } from "db"
 
-export default async function getClaims(_, ctx: { session?: SessionContext } = {}) {
-  ctx.session!.isAuthorized()
+type GetClaimsInput = {
+  where?: FindManyClaimArgs["where"]
+}
 
-  const companies = await db.claim.findMany({
+export default async function getClaims(
+  { where }: GetClaimsInput,
+  ctx: { session?: SessionContext } = {}
+) {
+  ctx.session!.authorize()
+
+  const claims = await db.claim.findMany({
     where: {
       userId: { equals: ctx.session?.userId },
+      ...where,
     },
     include: {
       company: true,
     },
   })
 
-  return companies
+  return claims
 }

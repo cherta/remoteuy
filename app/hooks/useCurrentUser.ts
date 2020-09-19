@@ -1,5 +1,6 @@
 import { useQuery, useSession } from "blitz"
 import getCurrentUser from "app/users/queries/getCurrentUser"
+import { Company } from "@prisma/client"
 
 export type CurrentUser = {
   id: number
@@ -7,6 +8,7 @@ export type CurrentUser = {
   email: string
   role: string
   verified: boolean
+  companies?: Company[]
 }
 
 export const useCurrentUser = (): CurrentUser | undefined => {

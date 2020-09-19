@@ -1,11 +1,9 @@
-import db from "db"
+import db, { User } from "db"
 import { SessionContext } from "blitz"
 import { v4 as uuidv4 } from "uuid"
 import { hashPassword } from "app/auth/auth-utils"
 import { SignupInput, SignupInputType } from "app/auth/validations"
-import client from "@sendgrid/client"
-
-client.setApiKey(process.env.SENDGRID_API_KEY as string)
+import { send as sendMail } from "app/mail"
 
 const getAppUrl = () => {
   if (process.env.VERCEL_URL) {
@@ -15,31 +13,13 @@ const getAppUrl = () => {
   }
 }
 
-const mailVerificationCode = async (user) => {
-  await client.request({
-    url: "/v3/mail/send",
-    method: "POST",
-    body: {
-      from: {
-        email: "cherta@remote.uy",
-      },
-      personalizations: [
-        {
-          to: [
-            {
-              email: user.email,
-            },
-          ],
-          dynamic_template_data: {
-            name: user.name || user.email,
-            verificationCode: user.verificationCode,
-            websiteUrl: `${getAppUrl()}/verify/`,
-          },
-        },
-      ],
-      template_id: "d-702b74048da24b12853ef70fdc2e7ba3",
-    },
-  })
+const mailVerificationCode = async (user: User) => {
+  const data = {
+    name: user.name || user.email,
+    verificationCode: user.verificationCode,
+    websiteUrl: `${getAppUrl()}/verify/`,
+  }
+  return await sendMail(user.email, data, "d-702b74048da24b12853ef70fdc2e7ba3")
 }
 
 export default async function signup(
@@ -55,7 +35,7 @@ export default async function signup(
     select: { id: true, name: true, email: true, role: true, verificationCode: true },
   })
 
-  await mailVerificationCode(user)
+  await mailVerificationCode(user as User)
   await ctx.session!.create({ userId: user.id, roles: [user.role], verified: false })
 
   return user

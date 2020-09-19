@@ -39,6 +39,7 @@
     "react-dom": "0.0.0-experimental-33c3af284",
     "react-error-boundary": "2.3.1",
     "react-final-form": "6.5.1",
+    "react-useinterval": "1.0.2",
     "secure-password": "4.0.0",
     "superjson": "1.2.1",
     "tailwindcss": "1",

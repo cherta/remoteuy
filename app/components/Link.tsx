@@ -5,7 +5,7 @@ export const Link = ({
   children,
   type = "regular",
   target,
-  className,
+  className = "",
   onClick,
   ...rest
 }: React.PropsWithChildren<

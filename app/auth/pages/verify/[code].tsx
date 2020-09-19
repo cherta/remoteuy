@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
-import { Head, useRouter, BlitzPage, useParam } from "blitz"
+import { useRouter, BlitzPage, useParam } from "blitz"
 import verify from "app/auth/mutations/verify"
+import Layout from "app/layouts/Layout"
 
 const VerifyPage: BlitzPage = () => {
   const router = useRouter()
@@ -21,15 +22,13 @@ const VerifyPage: BlitzPage = () => {
     if (verificationCode && verificationCode !== "") verifyUser()
   }, [router, verificationCode])
 
-  return (
-    <>
-      <Head>
-        <title>Account Verification</title>
-      </Head>
-
-      <p>{message}</p>
-    </>
-  )
+  return <p>{message}</p>
 }
+
+VerifyPage.getLayout = (page) => (
+  <Layout title="Empresas uruguayas que promueven el trabajo remoto | Verificando...">
+    {page}
+  </Layout>
+)
 
 export default VerifyPage

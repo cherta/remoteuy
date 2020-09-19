@@ -1,18 +1,25 @@
-import { Head } from "blitz"
+import { Head, useRouter } from "blitz"
 import { Link } from "app/components/Link"
 import { useCurrentUser, CurrentUser } from "app/hooks/useCurrentUser"
 import { Suspense, useCallback } from "react"
+import { ReactQueryDevtools } from "react-query-devtools"
 import logout from "app/auth/mutations/logout"
+import Loading from "app/components/Loading"
 
 type UserBadgeProps = JSX.IntrinsicElements["span"] & {
   user: CurrentUser
   className?: string
 }
 const UserBadge = ({ user, ...rest }: UserBadgeProps) => {
-  const logoutHandler = useCallback(async function (e) {
-    e.preventDefault()
-    await logout()
-  }, [])
+  const router = useRouter()
+  const logoutHandler = useCallback(
+    async function (e) {
+      e.preventDefault()
+      await logout()
+      router.push("/")
+    },
+    [router]
+  )
   return (
     <span {...rest}>
       {`Hola ${user.name ?? user.email}`},{" "}
@@ -81,8 +88,27 @@ const Header = () => {
           </MenuItem>
           {user && (
             <MenuItem>
-              <Link href="/companies/claim">Reclamar empresa</Link>
+              <Link href="/admin/claims">Reclamar empresa</Link>
             </MenuItem>
+          )}
+          {(user?.companies?.length || 0) > 0 && (
+            <>
+              <MenuItem>|</MenuItem>
+              <MenuItem>Empresas:</MenuItem>
+              <MenuItem>
+                {user?.companies
+                  ?.map((company) => (
+                    <Link
+                      key={company.id}
+                      href="/admin/companies/[id]"
+                      as={`/admin/companies/${company.id}`}
+                    >
+                      {company.name}
+                    </Link>
+                  ))
+                  .reduce((prev, curr) => [prev, ", ", curr])}
+              </MenuItem>
+            </>
           )}
           {user && <MenuItem>|</MenuItem>}
           {user && (
@@ -141,7 +167,7 @@ const Layout = ({
       <Suspense fallback={null}>
         <Header />
       </Suspense>
-      <Suspense fallback={null}>{children}</Suspense>
+      <Suspense fallback={<Loading />}>{children}</Suspense>
       <Footer />
     </div>
   </>

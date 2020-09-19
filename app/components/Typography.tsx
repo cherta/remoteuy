@@ -12,6 +12,14 @@ export const Title = ({ children, className, ...rest }: TitleProps) => {
   )
 }
 
+export const SubTitle = ({ children, className, ...rest }: TitleProps) => {
+  return (
+    <h1 className={`font-bold text-3xl mb-6 ${className}`} {...rest}>
+      {children}
+    </h1>
+  )
+}
+
 type ParagraphProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLParagraphElement>,
   HTMLParagraphElement
