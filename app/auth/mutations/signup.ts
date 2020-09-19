@@ -6,8 +6,8 @@ import { SignupInput, SignupInputType } from "app/auth/validations"
 import { send as sendMail } from "app/mail"
 
 const getAppUrl = () => {
-  if (process.env.VERCEL_URL) {
-    return `https://${process.env.VERCEL_URL}`
+  if (process.env.PUBLIC_URL) {
+    return `https://${process.env.PUBLIC_URL}`
   } else {
     return `http://localhost:3000`
   }
