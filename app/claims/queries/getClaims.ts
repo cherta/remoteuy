@@ -10,14 +10,17 @@ export default async function getClaims(
   ctx: { session?: SessionContext } = {}
 ) {
   ctx.session!.authorize()
-
+  const userFilter = ctx.session!.roles.includes("admin")
+    ? {}
+    : { userId: { equals: ctx.session!.userId } }
   const claims = await db.claim.findMany({
     where: {
-      userId: { equals: ctx.session?.userId },
+      ...userFilter,
       ...where,
     },
     include: {
       company: true,
+      user: true,
     },
   })
 

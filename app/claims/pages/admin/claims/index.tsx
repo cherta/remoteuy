@@ -92,6 +92,7 @@ const Claims: BlitzPage = () => {
             <tr className="border-b border-gray-300">
               <th className="p-2 border-r border-gray-300">#</th>
               <th className="p-2 border-r border-gray-300 w-56">Empresa</th>
+              {user?.role === "admin" && <th className="p-2 border-r border-gray-300">Usuario</th>}
               <th className="p-2 border-r border-gray-300">Información</th>
               <th className="p-2 w-32 border-r border-gray-300">Estatus</th>
               <th className="p-2">Acciones</th>
@@ -103,6 +104,12 @@ const Claims: BlitzPage = () => {
                 <tr className="border-b border-gray-300" key={claim.id}>
                   <td className="p-2 border-r border-gray-300">{claim.id}</td>
                   <td className="p-2 border-r border-gray-300">{claim.company?.name}</td>
+                  {user?.role === "admin" && (
+                    <td className="p-2 border-r border-gray-300">
+                      {claim.user?.name} ({claim.user?.email})
+                    </td>
+                  )}
+
                   <td className="p-2 border-r border-gray-300">{claim.info}</td>
                   <td className="p-2 border-r border-gray-300">
                     <ClaimStatusBadge status={claim.status} />
