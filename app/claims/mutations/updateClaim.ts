@@ -40,11 +40,11 @@ export default async function updateClaim(
   if (status === ClaimStatus.APPROVED) {
     if (claim.user && claim.company) {
       await mailClaimUpdate(claim.user, claim.company)
+      await db.company.update({
+        where: { id: claim.company.id },
+        data: { user: { connect: { id: claim.user.id } } },
+      })
     }
-    await db.company.update({
-      where: { id: claim.companyId || undefined },
-      data: { user: { connect: { id: ctx.session?.userId } } },
-    })
   }
 
   return claim
