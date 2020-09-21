@@ -18,10 +18,21 @@ const Resources: BlitzPage = () => {
           - Esto te permite facturar a empresas de Uruguay y el exterior
         </li>
         <li>
-          <Link href="Querés trabajar en Uruguay?" target="_blank">
-            Querés trabajar en Uruguay?
-          </Link>{" "}
-          - Esto te permite trabajar en Uruguay como dependiente
+          <Link href="https://www.liveinuruguay.uy/visas" target="_blank">
+            No sos del Mercosur y querés obtener residencia permanente
+          </Link>{" "} 
+          - Hay que hacer scroll hasta donde dice "MERCOSUR PERMANENT RESIDENCE" 
+        </li>
+        <li>
+          <Link href="https://www.liveinuruguay.uy/visas" target="_blank">
+            Sos del Mercosur y querés obtener residencia permanente
+          </Link>{" "} 
+          - Hay que hacer scroll hasta donde dice "PERMANENT RESIDENCE"
+        </li>
+        <li>
+          <Link href="https://collectednotes.com/betzerra/irse-a-uruguay" target="_blank">
+            Notas de Ezequiel Becerra sobre mudarse a Uruguay desde Argentina
+          </Link>
         </li>
       </ul>
     </main>
