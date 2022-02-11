@@ -32,7 +32,7 @@
     "@prisma/client": "2.5.1",
     "@react-hook/timeout": "2.1.1",
     "@sendgrid/client": "7.2.5",
-    "blitz": "0.22.1",
+    "blitz": "0.45.3",
     "final-form": "4.20.1",
     "pipe-then": "1.0.0",
     "react": "0.0.0-experimental-33c3af284",
