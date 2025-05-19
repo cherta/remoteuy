@@ -497,6 +497,16 @@ const companies = [
       hasPhysicalOffices: true,
     },
   },
+  {
+    picture: "https://softtero.com/wp-content/uploads/2021/11/favicon-32x32-1.png",
+    url: "https://softtero.com/",
+    name: "Softtero",
+    description: "Transformamos negocios con soluciones digitales poderosas y adaptables.",
+    meta: {
+      allowFullRemote: true,
+      hasPhysicalOffices: false,
+    },
+  },
 ]
 
 export default companies
