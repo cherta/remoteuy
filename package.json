@@ -41,7 +41,7 @@
     "react-final-form": "6.5.1",
     "react-useinterval": "1.0.2",
     "secure-password": "4.0.0",
-    "superjson": "1.2.1",
+    "superjson": "1.8.1",
     "tailwindcss": "1",
     "zod": "1.10.3"
   },
